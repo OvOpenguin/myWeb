@@ -1,0 +1,147 @@
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    /* 不累加內距和邊框(RWD必加功能) */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* 重置字體 */
+body {
+    /* 需要「""」的字體名稱：中文字體名稱、兩個英文單字含空格 
+       不需要「""」的字體名稱：一個單字、有「-」隔開
+       全部都給引號也可*/
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    /*inline不支援尺寸設定，但a常用來設定尺寸，所以直接把a設定為display:block*/
+
+    text-decoration: none;
+
+    /* CSS Transition 設定於元素本身，不要設定在hovr上，未滿動畫時間時，離開沒有動畫。*/
+    transition: 0.4s;
+}
+
+button {
+    // button預設有padding與border
+    border: none;
+    padding: 0;
+}
