@@ -2,13 +2,6 @@
 @use './mixin' as *;
 
 
-
-%bg-cover {
-    background-size: cover; //cover滿版剪裁
-    background-position: center; //bg cover最好搭配 background-position: center
-    background-attachment: fixed; //固定背景語法
-}
-
 %simple-line {
     overflow: hidden;
 	text-overflow: ellipsis;
