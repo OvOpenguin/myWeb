@@ -1,1 +1,9 @@
 @use '../variables/' as *;
+
+
+// 玻璃擬態只能寫在 mixin
+@mixin opbg {
+    // 透明背景共用
+    background: rgba(50, 50, 50, 0.60);
+    backdrop-filter: blur(5px);
+}

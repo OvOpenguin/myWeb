@@ -8,28 +8,55 @@
     outline: solid 1px red;
 }
 
-// 共用區
+/*共用區*/
 section {
-    // 這段之後可考慮共用區section統一設定(垂直致中排列)
+    // section統一設定(垂直致中排列)，高度各區自行決定
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
 }
 
+// 首頁標題-黑色透明背景
 .title {
     width: 100%;
     text-align: center;
-    line-height: 25vh;
     color: $y1;
     // 透明背景共用
-    background: rgba(50, 50, 50, 0.60);
-    backdrop-filter: blur(5px);
+    @include opbg;
 }
 
+// 第一個按鈕樣式(亮色)
+.btnBack {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    // 按鈕背景透明
+    border: 0.6px solid rgba(50, 50, 50, 0.70);
+    background: rgba(50, 50, 50, 0.20);
+    backdrop-filter: blur(5px);
+    // svg置中
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // 上方間距
+    margin-top: 15px;
 
+    svg {
+        width: 100%;
+        height: 40%;
+        // 調整svg位置
+        margin-right: 5px;
+    }
+}
 
+// 第二個按鈕樣式(暗色)
+.b2 {
+    border: 0.6px solid rgba(255, 255, 255, 0.70);
+    background: rgba(255, 255, 255, 0.20);
+}
+
+/*主要內容區*/
 // 首頁banner
 #banner {
     height: 100vh;
@@ -41,13 +68,16 @@ section {
     background-attachment: fixed; //固定背景語法
 
     h1 {
-        font-size: 8rem;
+        font-weight: 600;
     }
 
     .event {
-        p {
+        margin-top: 30px;
+
+
+        h2 {
+            font-weight: 600;
             color: #fff;
-            font-size: 2.5rem;
         }
     }
 }
@@ -61,8 +91,7 @@ section {
     background-attachment: fixed;
 
     h2 {
-        line-height: 15vh;
-        font-size: 2rem;
+        padding: 30px 0;
     }
 
     .btnbox {
@@ -88,8 +117,9 @@ section {
 
 //事件資訊區
 #info {
+    position: relative;
     height: auto;
-    padding: 50px 0;
+    padding: 100px 0 150px 0;
     background: url(./home-info2.png);
     background-size: cover;
     background-position: center;
@@ -98,18 +128,31 @@ section {
     article {
         width: 80%;
         display: flex;
-        padding: 30px 60px;
+        padding: 30px;
+        margin-bottom: 30px;
         // card重疊設定
         position: sticky;
         top: 50px;
 
+        @media (max-width:719px) {
+            flex-direction: column;
+
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+        }
+
+
         // 每張卡片不同背景顏色
         &:nth-child(1) {
             background: rgba(255, 239, 158, 0.80);
+            color: $b1;
         }
 
         &:nth-child(2) {
             background: rgba(255, 214, 0, 0.80);
+            color: $b1;
         }
 
         &:nth-child(3) {
@@ -120,6 +163,7 @@ section {
         .card-r-wrap {
             display: flex;
             flex-direction: column;
+            gap: 30px;
         }
 
         .card-l {
@@ -145,19 +189,6 @@ section {
 
         .card-r {
             display: flex;
-
-            h3 {
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .content {
-                flex: 2;
-                padding-left: 20px;
-            }
 
             .yearBtnbox {
                 display: flex;
@@ -192,14 +223,49 @@ section {
                 }
             }
 
+            .content {
+                flex: 2;
+                padding: 0 20px;
+
+                h3 {
+                    font-weight: 600;
+                }
+
+                p {
+                    // 4行省略
+                    @extend %multiple-lines;
+                    -webkit-line-clamp: 4;
+                    margin-top: 10px;
+                }
+            }
+
             figure {
                 flex: 1;
 
                 img {
                     @extend %img-cover;
                 }
+
+                @media (max-width:945px) {
+                    display: none;
+                }
             }
         }
+    }
+
+    .btnMore {
+        // 定位
+        position: absolute;
+        bottom: 80px;
+        // btnMore樣式
+        padding: 10px 20px;
+        border: 1px solid rgba(50, 50, 50, 0.70);
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10.5px);
+        // 字體
+        color: $b1;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
     }
 }
 
@@ -212,7 +278,31 @@ section {
     background-attachment: fixed;
 
     h2 {
-        line-height: 15vh;
-        font-size: 2rem;
+        padding: 30px 0;
+    }
+
+    .tv {
+        margin-top: 50px;
+        width: 450px;
+        height: 300px;
+        border: 3px solid #FFD600;
+        background: #000;
+        // 按鈕致中對齊
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .result {
+        margin-top: 30px;
+        // 按鈕設定
+        padding: 10px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.70);
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10.5px);
+        // 字體
+        color: #FFF;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
     }
 }

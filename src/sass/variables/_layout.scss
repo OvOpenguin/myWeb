@@ -1,0 +1,11 @@
+@use "../variables/color" as *;
+
+/* 頁尾區 */
+footer {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: $b1;
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+}
