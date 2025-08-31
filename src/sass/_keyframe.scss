@@ -1,0 +1,18 @@
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        // display要一起寫入才會有動畫過度效果
+        opacity: 1; display: flex;
+    }
+    to {
+        opacity: 0;  display: none;
+    }
+}

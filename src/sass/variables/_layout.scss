@@ -1,13 +1,13 @@
 @use "../reset";
 @use "../variables/color" as *;
-
+@use "../keyframe";
 
 
 /*選單區*/
 header {
     nav {
         z-index: 99;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         display: flex;
@@ -17,7 +17,8 @@ header {
         margin: 20px 10px 0 0;
     }
 
-    .btnPause {
+
+    .hamburger {
         width: 48px;
         height: 48px;
         border-radius: 50%;
@@ -25,6 +26,46 @@ header {
         background: rgba(255, 255, 255, 0.20);
         backdrop-filter: blur(10px);
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        // 裡面的bar
+        .bar {
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color: $b1;
+            border-radius: 8px;
+        }
+        svg{
+            margin-left: 3px;
+            display: none;
+        }
+
+        &.is-active {
+            .bar{
+                display: none;
+            }
+            svg{
+                display: flex;
+            }
+
+        }
+
+
+
+    }
+
+    .menu {
+        display: none;
+        animation: hide .5s both;
+
+        &.show {
+            display: flex;
+            animation: show .5s both;
+        }
     }
 
     ul {

@@ -7,3 +7,8 @@
     background: rgba(50, 50, 50, 0.60);
     backdrop-filter: blur(5px);
 }
+
+// 動畫共用的大致設定+
+@mixin amt($name, $speed: .75s) {
+    animation: $name $speed both;
+}
