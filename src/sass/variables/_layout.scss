@@ -1,4 +1,64 @@
+@use "../reset";
 @use "../variables/color" as *;
+
+
+
+/*選單區*/
+header {
+    nav {
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        margin: 20px 10px 0 0;
+    }
+
+    .btnPause {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid rgba(50, 50, 50, 0.70);
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(10px);
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        width: 120px;
+
+        li {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            // 按鈕樣式
+            padding: 10px 20px;
+            border: 1px solid rgba(50, 50, 50, 0.70);
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(10px);
+
+            // 字體顏色
+            a {
+                color: $b1;
+                font-weight: 600;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: $y1;
+                }
+            }
+
+        }
+    }
+}
 
 /* 頁尾區 */
 footer {
