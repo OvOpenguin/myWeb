@@ -95,45 +95,124 @@ section {
     background-position: center;
     background-attachment: fixed;
 
-    .card {
+    article {
         width: 80%;
         display: flex;
         padding: 30px 60px;
-        background: rgba(255, 239, 158, 0.80);
         // card重疊設定
         position: sticky;
-        top:50px;
+        top: 50px;
+
+        // 每張卡片不同背景顏色
+        &:nth-child(1) {
+            background: rgba(255, 239, 158, 0.80);
+        }
+
+        &:nth-child(2) {
+            background: rgba(255, 214, 0, 0.80);
+        }
+
+        &:nth-child(3) {
+            background: rgba(0, 0, 0, 0.80);
+            color: #fff;
+        }
+
+        .card-r-wrap {
+            display: flex;
+            flex-direction: column;
+        }
 
         .card-l {
             display: flex;
-            padding: 0 30px;
+            padding: 0 20px;
             justify-content: center;
             align-items: flex-start;
 
             h2 {
-                color: $b1;
                 font-size: 6rem;
                 padding-right: 10px;
+            }
+
+            .str1 {
                 border-right: 10px solid $b1;
+
+            }
+
+            .str2 {
+                border-right: 10px solid $y1;
             }
         }
+
         .card-r {
             display: flex;
+
             h3 {
                 font-size: 4rem;
             }
+
             p {
                 font-size: 1rem;
             }
-            .content{
+
+            .content {
                 flex: 2;
                 padding-left: 20px;
             }
+
+            .yearBtnbox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .btnBack {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    // 按鈕背景透明
+                    border: 0.643px solid rgba(50, 50, 50, 0.70);
+                    background: rgba(50, 50, 50, 0.20);
+                    backdrop-filter: blur(5px);
+                    // svg置中
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        width: 100%;
+                        height: 40%;
+                        // 調整svg位置
+                        margin-right: 5px;
+                    }
+                }
+
+                // 第二個按鈕樣式(暗色)
+                .b2 {
+                    border: 0.643px solid rgba(255, 255, 255, 0.70);
+                    background: rgba(255, 255, 255, 0.20);
+                }
+            }
+
             figure {
+                flex: 1;
+
                 img {
                     @extend %img-cover;
                 }
             }
         }
+    }
+}
+
+// 隨機選擇區
+#random {
+    height: 100vh;
+    background: url(./home-select1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    h2 {
+        line-height: 15vh;
+        font-size: 2rem;
     }
 }
