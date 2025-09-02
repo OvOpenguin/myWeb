@@ -9,13 +9,13 @@ const Home = () => {
                 <section id="banner">
                     <div className="title"><h1>2025</h1></div>
                     <div className="event">
-                        <h2>中美貿易戰</h2>
+                        <h4>中美貿易戰</h4>
                     </div>
                 </section>
 
                 {/* 初始選擇區 */}
                 <section id="select">
-                    <div className="title"><h2>如果歷史可以重來，你會怎麼做？</h2></div>
+                    <div className="title"><h4>如果歷史可以重來，你會怎麼做？</h4></div>
                     <div className="btnbox">
                         <button className="btn">直接挑戰</button>
                         <button className="btn">蒐集情報</button>
@@ -48,6 +48,7 @@ const Home = () => {
 
                         </div>
                     </article>
+
                     {/* 西元17 */}
                     <article className="card">
                         <div className="card-l"><h2 className="str1">17</h2></div>
@@ -138,12 +139,9 @@ const Home = () => {
 
                 </section>
 
-
-
-
                 {/* 隨機選擇區 */}
                 <section id="random">
-                    <div className="title"><h2>不知道去哪？隨機回溯時空，改寫歷史。</h2></div>
+                    <div className="title"><h4>不知道去哪？隨機回溯時空，改寫歷史。</h4></div>
                     <div className="tv">
                         <button className="btnBack b2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 22 19" fill="none">
