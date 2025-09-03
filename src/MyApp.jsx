@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Home from "./pages/Home"
 import Travel from "./pages/Travel"
 import Events from "./pages/Events"
+import Test from "./pages/Test"
 
 const MyApp = () => {
   return (
@@ -17,6 +18,7 @@ const MyApp = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/travel' element={<Travel/>}></Route>
             <Route path='/events' element={<Events/>}></Route>
+            <Route path='/test' element={<Test/>}></Route>
         </Routes>
 
         {/* 頁尾區 */}
