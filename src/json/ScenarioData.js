@@ -20,7 +20,7 @@ export const scenarios = [
                 truth: '1980年代美國聯準會曾採取此策略'
             }
         },
-        image: './images/p1.jpg',
+        image: './hero-bg.png',
     },
     {   
         id:'2',
@@ -43,7 +43,7 @@ export const scenarios = [
                 truth: '1929年美國大蕭條初期曾採取放任政策'
             }
         },
-        image: './images/p2.jpg',
+        image: './info1.png',
     }, 
     {
         id:'3',
@@ -66,7 +66,7 @@ export const scenarios = [
                 truth: '希臘在歐債危機期間曾以高利率籌資，導致債務惡化'
             }
         }, 
-        image: './images/p3.jpg',
+        image: './home-info2.png',
     }, 
     {
         id:'4',
@@ -89,7 +89,7 @@ export const scenarios = [
                 truth: '美國聯準會對CBDC持審慎態度，尚未全面推行'
             }
         },
-        image: './images/p4.jpg',
+        image: './home-info2.png',
     }, 
     {
         id:'5',
@@ -112,6 +112,6 @@ export const scenarios = [
                 truth: '新加坡推動學生理財競賽，提升金融參與度'
             }
         },
-        image: './images/p5.jpg',
+        image: './home-select1.jpg',
     }
 ];

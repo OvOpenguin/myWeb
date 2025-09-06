@@ -1,6 +1,7 @@
 import "../sass/home.scss";
 import btnBack from '../images/btn-back.svg';
 import YearCounter from "../components/YearCount";
+import Fate from "../components/Fate";
 
 const Home = () => {
     return (
@@ -141,7 +142,7 @@ const Home = () => {
                 </section>
 
                 {/* 隨機選擇區 */}
-                <section id="random">
+                {/* <section id="random">
                     <div className="title"><h4>不知道去哪？隨機回溯時空，改寫歷史。</h4></div>
                     <div className="tv">
                        
@@ -154,7 +155,9 @@ const Home = () => {
                         
                     </div>
                     <div className="result">前往：1929年經濟大蕭條</div>
-                </section>
+                </section> */}
+
+                <Fate/>
             </main>
         </>
     )
