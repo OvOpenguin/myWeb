@@ -3,9 +3,39 @@
 @use './function' as *;
 @use './keyframe';
 
+@font-face {
+    font-family: Genkai;
+    src: url(../webfont/genkai-mincho.ttf);
+}
+
+@font-face {
+    font-family: ToronoGlitchSerif-1;
+    src: url(../webfont/瀞ノグリッチ明朝H1.otf);
+}
+
+@font-face {
+    font-family: ToronoGlitchSerif-2;
+    src: url(../webfont/瀞ノグリッチ明朝H2.otf);
+}
+
+@font-face {
+    font-family: ToronoGlitchSerif-3;
+    src: url(../webfont/瀞ノグリッチ明朝H3.otf);
+}
+
+@font-face {
+    font-family: ToronoGlitchSerif-4;
+    src: url(../webfont/瀞ノグリッチ明朝H4.otf);
+}
+
+@font-face {
+    font-family: GenSenRound2;
+    src: url(../webfont/GenSenRounded2TW-R.otf);
+}
+
 
 * {
-    // outline: solid 1px red;
+    outline: solid 1px red;
 }
 
 /*共用區*/
@@ -56,6 +86,8 @@ section {
     background: rgba(255, 255, 255, 0.20);
 }
 
+
+
 /*主要內容區*/
 // 首頁banner
 #banner {
@@ -68,7 +100,7 @@ section {
     background-attachment: fixed; //固定背景語法
 
     h1 {
-        font-weight: 600;
+        font-family: ToronoGlitchSerif-2;
     }
 
     .event {
@@ -90,7 +122,8 @@ section {
     background-position: center;
     background-attachment: fixed;
 
-    h2 {
+
+    h4 {
         padding: 30px 0;
     }
 
@@ -175,6 +208,7 @@ section {
             h2 {
                 font-size: 6rem;
                 padding-right: 25px;
+                font-family: ToronoGlitchSerif-1;
             }
 
             .str1 {
@@ -189,6 +223,10 @@ section {
 
         .card-r {
             display: flex;
+
+            h3 {
+                font-family: ToronoGlitchSerif-2;
+            }
 
             .yearBtnbox {
                 display: flex;
@@ -226,10 +264,6 @@ section {
             .content {
                 flex: 2;
                 padding: 0 20px;
-
-                h3 {
-                    font-weight: 600;
-                }
 
                 p {
                     // 4行省略
@@ -277,7 +311,7 @@ section {
     background-position: center;
     background-attachment: fixed;
 
-    h2 {
+    h4 {
         padding: 30px 0;
     }
 

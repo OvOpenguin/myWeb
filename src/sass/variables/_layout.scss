@@ -5,6 +5,7 @@
 
 /*選單區*/
 header {
+
     nav {
         z-index: 99;
         position: fixed;
@@ -50,6 +51,9 @@ header {
             }
             svg{
                 display: flex;
+                path{
+                    fill: #fff;
+                }
             }
 
         }
@@ -88,8 +92,7 @@ header {
 
             // 字體顏色
             a {
-                color: $b1;
-                font-weight: 600;
+                color: #fff;
                 letter-spacing: 2px;
 
                 &:hover {

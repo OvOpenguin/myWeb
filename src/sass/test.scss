@@ -4,8 +4,10 @@
 @use './keyframe';
 
 * {
-    outline: solid 1px red;
+    // outline: solid 1px red;
 }
+
+
 
 
 // 共用區
@@ -13,17 +15,24 @@
     white-space: pre-wrap;
 }
 
+// 按鈕設定待更新
 .check {
     transition: all 0.35s ease;
     font-size: 1.25rem;
     border-radius: 8px;
     padding: 8px 16px;
-    background-color: $b2;
-    color: $b1;
+    background-color: $b1;
+    color: #fff;
+
+    &:hover {
+        background-color: $b2;
+        color: $b1;
+
+    }
 
     &:active {
-        background-color: $b1;
-        color: $b2;
+        background-color: $b2;
+        color: $b1;
     }
 }
 
@@ -52,6 +61,7 @@
 
 #test {
 
+    // 標題
     .test-subject {
         width: 100%;
         padding: 20px 0;
@@ -61,19 +71,30 @@
 
     }
 
+    // 題目
+    .test-content {
+        position: relative;
+        width: 100%;
+        padding: 100px 0;
+        margin: 0 0 50px;
+        background-image: url(../images/bg-line.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: repeat-x;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+    }
+
+
+
     .test-other {
         width: 70%;
 
-
-        .test-content {
-       
-            padding: 100px 20px;
-            text-align: left;
-        }
-
         .select-box {
-
-
             h5 {
                 position: relative;
                 font-size: 1.5rem;
@@ -134,14 +155,6 @@
                 font-size: 1.25rem;
                 border-radius: 8px;
                 padding: 8px 16px;
-                background-color: $b2;
-                color: $b1;
-
-                &:active {
-                    background-color: $b1;
-                    color: $b2;
-                }
-
             }
         }
 
@@ -149,7 +162,7 @@
             margin-top: 30px;
         }
 
-        .cross{
+        .cross {
             margin-top: 30px;
             display: flex;
             justify-content: flex-end;
@@ -160,6 +173,31 @@
 
 }
 
-.btnRandom{
-    margin: 30px 0;
+#box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 30px auto 0;
+    padding-bottom: 30px;
+
+}
+
+.testwrap {
+    position: relative;
+    font-weight: 600;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        background-image: url(../images/bg-line.png);
+        background-repeat: repeat-x;
+        z-index: -1;
+    }
+
 }

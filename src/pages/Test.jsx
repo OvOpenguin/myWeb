@@ -4,7 +4,7 @@ import { scenarios } from '../json/ScenarioData'; // 假設你把章節資料抽
 
 import "../sass/test.scss"
 
-
+import bg from "../images/bg-line.png";
 
 
 
@@ -31,10 +31,14 @@ function Scenario({ data, onNext }) {
 
             <div className='test-subject'><h3 >{data.name}</h3></div>
 
+            <div className='test-content'>
+                <p className="description-text">{data.intro}</p>
+            </div>
+
+
+
             <div className='test-other'>
-                <div className='test-content'>
-                    <p className="description-text">{data.intro}</p>
-                </div>
+
 
                 {/* 選擇題 */}
                 {!decisionMade && (
@@ -100,11 +104,9 @@ function Scenario({ data, onNext }) {
                             <button className="check" onClick={handleRetry}>
                                 🔄 重新選擇
                             </button>
-                            {/* <button className="check" onClick={onNext}>
-                                ⏭️ 回溯下一個時空
-                            </button> */}
 
                         </div>
+
                     </>
 
                 )}
@@ -147,24 +149,26 @@ function ScenarioManager() {
 
 
     return (
-        <div>
 
+        <main className='testwrap'>
             <Scenario
                 key={index}
                 data={scenarios[index]}
                 onNext={handleNextScenario}
             />
 
-            <button className='check btnRandom' onClick={jumpToRandomScenario}>
-                🎲 隨機跳轉時空
-            </button>
-            <button className="check" onClick={handleNextScenario}>
-                ⏭️ 回溯下一個時空
-            </button>
+            <section id='box'>
+                <button className='check' onClick={jumpToRandomScenario}>
+                    🎲 隨機跳轉時空
+                </button>
+                <button className="check" onClick={handleNextScenario}>
+                    ⏭️ 回溯下一個時空
+                </button>
+            </section>
+        </main>
 
 
 
-        </div>
     );
 }
 
