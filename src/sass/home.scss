@@ -25,7 +25,7 @@
 
 
 * {
-    outline: solid 1px red;
+    // outline: solid 1px red;
 }
 
 /*共用區*/
@@ -312,6 +312,7 @@ section {
     }
 
     .tv {
+        position: relative;
         margin-top: 50px;
         width: 450px;
         height: 300px;
@@ -323,6 +324,14 @@ section {
         align-items: center;
     }
 
+    .specific {
+        margin-top: 20px;
+        color: $y1;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+
     .result {
         margin-top: 30px;
         // 按鈕設定
@@ -332,7 +341,33 @@ section {
         backdrop-filter: blur(10.5px);
         // 字體
         color: #FFF;
-        font-size: 1.5rem;
+        font-size: 1rem;
         letter-spacing: 2px;
+    }
+
+    .rewind {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        // 按鈕背景透明
+        border: 0.6px solid rgba(255, 255, 255, 0.70);
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(5px);
+        // svg置中
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // 上方間距
+        margin-top: 15px;
+
+        svg {
+            width: 100%;
+            height: 40%;
+            // 調整svg位置
+            margin-right: 5px;
+        }
+
     }
 }

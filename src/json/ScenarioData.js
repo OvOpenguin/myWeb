@@ -1,6 +1,6 @@
 // ScenarioData.js
 export const scenarios = [
-    {
+    {   id:'1',
         name: '危機邊緣：1929年股災前夕',
         intro: '時間：1929年9月\n瓊指數已飆升至381點，是1923年的5倍。\n擔保貸款（margin loan）金額超過85億美元，甚至高於美國流通貨幣總量。\n擦鞋童都在談股票，投資熱潮席捲全美。\n你現在是美國財政部長，面對股市狂飆與信貸膨脹，你會怎麼做？',
         decisions: {
@@ -19,9 +19,11 @@ export const scenarios = [
                 reaction: '房市崩跌，失業率上升',
                 truth: '1980年代美國聯準會曾採取此策略'
             }
-        }
+        },
+        image: './images/p1.jpg',
     },
-    {
+    {   
+        id:'2',
         name: '第2章節：金融危機應對',
         intro: '你是中央銀行總裁，面對銀行倒閉潮，必須做出抉擇。',
         decisions: {
@@ -40,8 +42,11 @@ export const scenarios = [
                 reaction: '金融市場崩潰，全球連鎖反應',
                 truth: '1929年美國大蕭條初期曾採取放任政策'
             }
-        }
-    }, {
+        },
+        image: './images/p2.jpg',
+    }, 
+    {
+        id:'3',
         name: '第3章節：債務危機抉擇',
         intro: '你是某新興國家的財政顧問，國家面臨外債違約風險，必須選擇應對策略。',
         decisions: {
@@ -60,8 +65,11 @@ export const scenarios = [
                 reaction: '短期資金湧入，但長期債務負擔加重',
                 truth: '希臘在歐債危機期間曾以高利率籌資，導致債務惡化'
             }
-        }
-    }, {
+        }, 
+        image: './images/p3.jpg',
+    }, 
+    {
+        id:'4',
         name: '第4章節：數位貨幣試驗',
         intro: '你是中央銀行總裁，正考慮推出官方數位貨幣（CBDC），需評估影響。',
         decisions: {
@@ -80,8 +88,11 @@ export const scenarios = [
                 reaction: '被批評保守，失去創新領導地位',
                 truth: '美國聯準會對CBDC持審慎態度，尚未全面推行'
             }
-        }
-    }, {
+        },
+        image: './images/p4.jpg',
+    }, 
+    {
+        id:'5',
         name: '第5章節：金融教育改革',
         intro: '你是教育部長，面對年輕世代理財能力低落，需改革課綱。',
         decisions: {
@@ -100,6 +111,7 @@ export const scenarios = [
                 reaction: '激發學習動機，但可能排擠弱勢學生',
                 truth: '新加坡推動學生理財競賽，提升金融參與度'
             }
-        }
+        },
+        image: './images/p5.jpg',
     }
 ];

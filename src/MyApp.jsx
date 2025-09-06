@@ -6,26 +6,29 @@ import Home from "./pages/Home"
 import Events from "./pages/Events"
 import Test from "./pages/Test"
 import YearCount from './components/YearCount'
+import Fate from './components/Fate'
 
 const MyApp = () => {
   return (
     <div className='wrap'>
-        {/* 選單 */}
-        <Nav></Nav>
+      {/* 選單 */}
+      <Nav></Nav>
 
-        {/* 內容區-新頁面可增加進來 */}
-        <Routes>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='/events' element={<Events/>}></Route>
-            <Route path='/test' element={<Test/>}></Route>
-            <Route path='/yearcount' element={<YearCount/>}></Route>
-        </Routes>
+      {/* 內容區-新頁面可增加進來 */}
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/events' element={<Events />}></Route>
+        <Route path='/test' element={<Test />}></Route>
+        <Route path='/yearcount' element={<YearCount />}></Route>
+        <Route path='/fate' element={<Fate />}></Route>
+        <Route path="/topic/:id" element={<Test />} />
+      </Routes>
 
-        {/* 頁尾區 */}
-        <Footer></Footer>
-        
-        
-        </div>
+      {/* 頁尾區 */}
+      <Footer></Footer>
+
+
+    </div>
   )
 }
 
