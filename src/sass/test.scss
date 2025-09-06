@@ -25,14 +25,12 @@
     color: #fff;
 
     &:hover {
-        background-color: $b2;
-        color: $b1;
+        filter: grayscale(40%) brightness(1.2);
 
     }
 
     &:active {
-        background-color: $b2;
-        color: $b1;
+        filter: grayscale(40%) brightness(1.2);
     }
 }
 
@@ -123,24 +121,22 @@
 
                 .btnSelect {
                     font-size: 1.25rem;
-
                     color: transparent;
                     background: linear-gradient(90deg, $b1 0%, $b2 100%);
                     background-clip: text; //背景剪裁到文字形狀
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-
-                    border-radius: 8px;
                     border: 3px solid $b2;
+                    border-radius: 8px;
                     padding: 16px;
                     margin-bottom: 30px;
                     cursor: pointer;
-                    transition: all .35s ease;
+                }
 
-                    &:hover {
-                        border: 3px solid $b1;
-                    }
-
+                .btnSelectActive {
+                    background: linear-gradient(90deg, $b1 0%, $b2 100%);
+                    color: #fff;
+                    -webkit-text-fill-color: #fff;
                 }
 
             }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { scenarios } from '../json/ScenarioData'; // 假設你把章節資料抽成獨立檔案
 
@@ -7,7 +7,7 @@ import "../sass/test.scss"
 import bg from "../images/bg-line.png";
 
 
-
+// 獨立出選擇題元件
 function Scenario({ data, onNext }) {
     const [selected, setSelected] = useState(null);
     const [decisionMade, setDecisionMade] = useState(false);
@@ -49,7 +49,7 @@ function Scenario({ data, onNext }) {
 
                             <div key={key} className='btnBox'>
                                 <button
-                                    className='btnSelect'
+                                    className={`btnSelect ${selected === key ? 'btnSelectActive' : ''}`}
                                     onClick={() => setSelected(key)}
                                 >
                                     {key}：{value.outcome}
@@ -136,7 +136,6 @@ function ScenarioManager() {
         }
     };
 
-
     // 隨機跳到另外章節，不照著順序
     const jumpToRandomScenario = () => {
         let randomIndex;
@@ -148,8 +147,8 @@ function ScenarioManager() {
     };
 
 
-    return (
 
+    return (
         <main className='testwrap'>
             <Scenario
                 key={index}
@@ -166,9 +165,6 @@ function ScenarioManager() {
                 </button>
             </section>
         </main>
-
-
-
     );
 }
 

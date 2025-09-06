@@ -19,16 +19,6 @@
 }
 
 @font-face {
-    font-family: ToronoGlitchSerif-3;
-    src: url(../webfont/瀞ノグリッチ明朝H3.otf);
-}
-
-@font-face {
-    font-family: ToronoGlitchSerif-4;
-    src: url(../webfont/瀞ノグリッチ明朝H4.otf);
-}
-
-@font-face {
     font-family: GenSenRound2;
     src: url(../webfont/GenSenRounded2TW-R.otf);
 }
@@ -88,24 +78,30 @@ section {
 
 
 
+
 /*主要內容區*/
 // 首頁banner
 #banner {
     height: 100vh;
-
     // 底圖設定cover
     background-image: url(./hero-bg.png);
     background-size: cover; //cover滿版剪裁
     background-position: center; //bg cover最好搭配 background-position: center
     background-attachment: fixed; //固定背景語法
+    transition: all 1s ease;
 
-    h1 {
+    // 針對倒數數字額外設定
+    .count {
         font-family: ToronoGlitchSerif-2;
+        font-size: 8rem;
+        width: 100%;
+        text-align: center;
+        color: $y1;
+        @include opbg;
     }
 
     .event {
         margin-top: 30px;
-
 
         h4 {
             font-weight: 600;

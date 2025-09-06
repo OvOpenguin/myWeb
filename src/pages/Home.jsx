@@ -1,5 +1,6 @@
 import "../sass/home.scss";
 import btnBack from '../images/btn-back.svg';
+import YearCounter from "../components/YearCount";
 
 const Home = () => {
     return (

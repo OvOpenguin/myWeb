@@ -3,9 +3,9 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 import Home from "./pages/Home"
-import Travel from "./pages/Travel"
 import Events from "./pages/Events"
 import Test from "./pages/Test"
+import YearCount from './components/YearCount'
 
 const MyApp = () => {
   return (
@@ -16,9 +16,9 @@ const MyApp = () => {
         {/* 內容區-新頁面可增加進來 */}
         <Routes>
             <Route path='/' element={<Home/>}></Route>
-            <Route path='/travel' element={<Travel/>}></Route>
             <Route path='/events' element={<Events/>}></Route>
             <Route path='/test' element={<Test/>}></Route>
+            <Route path='/yearcount' element={<YearCount/>}></Route>
         </Routes>
 
         {/* 頁尾區 */}
