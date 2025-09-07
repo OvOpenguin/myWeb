@@ -4,7 +4,6 @@ import YearCounter from '../components/YearCount';
 const Lists = () => {
     return (
         <>
-        <YearCounter/>
             <section id='lists'>
                 <nav>
                     <ul>
