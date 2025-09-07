@@ -2,6 +2,8 @@ import "../sass/home.scss";
 import btnBack from '../images/btn-back.svg';
 import YearCounter from "../components/YearCount";
 import Fate from "../components/Fate";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
     return (
@@ -19,8 +21,8 @@ const Home = () => {
                 <section id="select">
                     <div className="title"><h4>如果歷史可以重來，你會怎麼做？</h4></div>
                     <div className="btnbox">
-                        <button className="btn">直接挑戰</button>
-                        <button className="btn">蒐集情報</button>
+                        <Link to="/test"><button className="btn">直接挑戰</button></Link>
+                        <Link to="/lists"><button className="btn btnlist">蒐集情報</button></Link>
                     </div>
                 </section>
 
@@ -33,10 +35,14 @@ const Home = () => {
                         <div className="card-l"><h2 className="str1">16</h2></div>
                         <div className="card-r">
                             {/* 年分+按鈕 */}
-                            <div>
+                            <div className="yearBtnbox">
                                 <h3>36</h3>
-                                {/* 測試使用btn+svg和img的差別 */}
-                                <figure><img src={btnBack} alt="回溯鍵" /></figure>
+                                <button className="btnBack">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 22 19" fill="none">
+                                        <path d="M12.2342 10.5694L20.4148 18.0775C21.109 18.714 22 17.9433 22 16.6601V1.64387C22 0.362691 21.1103 -0.410082 20.4148 0.228472L12.2342 7.73657C12.0763 7.87918 11.945 8.08531 11.8537 8.33406C11.7624 8.58282 11.7143 8.86534 11.7143 9.15298C11.7143 9.44063 11.7624 9.72315 11.8537 9.97191C11.945 10.2207 12.0763 10.4268 12.2342 10.5694Z" fill="#323232" />
+                                        <path d="M1.30564 10.5694L9.48623 18.0775C10.1805 18.714 11.0714 17.9433 11.0714 16.6601V1.64387C11.0714 0.362691 10.1818 -0.410082 9.48623 0.228472L1.30564 7.73657C1.14771 7.87918 1.01644 8.08531 0.925128 8.33406C0.833821 8.58282 0.785728 8.86534 0.785728 9.15298C0.785728 9.44063 0.833821 9.72315 0.925128 9.97191C1.01644 10.2207 1.14771 10.4268 1.30564 10.5694Z" fill="#323232" />
+                                    </svg>
+                                </button>
                             </div>
                             {/* 標題內文 */}
                             <div className="content">
@@ -83,9 +89,9 @@ const Home = () => {
 
                     {/* 西元19 */}
                     <article className="card">
-                        
+
                         <div className="card-l"><h2 className="str2">19</h2></div>
-                        
+
                         {/* 卡片事件2件以上加上一個外層column排列 */}
                         <div className="card-r-wrap">
                             <div className="card-r">
@@ -124,7 +130,7 @@ const Home = () => {
                                 <div className="content">
                                     <h3>索羅斯狙擊</h3>
                                     <p>一位「金融巨鱷」讓整個亞洲貨幣市場瞬間失控——1997年，索羅斯狙擊泰銖，引爆亞洲金融危機。索羅斯主導的量子基金大舉做空泰銖，迫使泰國放棄固定匯率制度，泰銖狂跌，骨牌效應席捲亞洲。
-                                        <br/>國家與資本的正面交鋒，深入了解撼動亞洲金融的「索羅斯風暴」，看一場貨幣戰爭如何改寫區域經濟命運。
+                                        <br />國家與資本的正面交鋒，深入了解撼動亞洲金融的「索羅斯風暴」，看一場貨幣戰爭如何改寫區域經濟命運。
                                     </p>
                                 </div>
                                 {/* 附圖 */}
@@ -137,7 +143,7 @@ const Home = () => {
                     </article>
 
                     {/* 按鈕 */}
-                    <button className="btnMore">更多情報</button>
+                    <Link to="/lists"> <button className="btnMore">更多情報</button></Link>
 
                 </section>
 
@@ -157,7 +163,7 @@ const Home = () => {
                     <div className="result">前往：1929年經濟大蕭條</div>
                 </section> */}
 
-                <Fate/>
+                <Fate />
             </main>
         </>
     )

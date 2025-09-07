@@ -1,4 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
+
+import ScrollToTop from './components/ScrollToTop'
+
 import Footer from './components/Footer'
 import Nav from './components/Nav'
 
@@ -9,9 +12,12 @@ import YearCount from './components/YearCount'
 import Fate from './components/Fate'
 import Lists from './pages/Lists'
 
+
+
 const MyApp = () => {
   return (
     <div className='wrap'>
+      <ScrollToTop/>
       {/* 選單 */}
       <Nav></Nav>
 

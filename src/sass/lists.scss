@@ -4,7 +4,7 @@
 @use './keyframe';
 
 * {
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 #lists {
@@ -18,25 +18,39 @@
         color: #fff;
         font-family: Genkai;
 
-
-
         ul {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 30px;
 
 
             li {
                 font-size: 1.5rem;
-                padding: 20px;
+                padding: 20px 15px;
+                text-shadow: 0 0 0px $b1;
+                transition: text-shadow 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    text-shadow: 0 0 10px $y1,
+                }
+
+                &:active {
+                    text-shadow: 0 0 15px $y1, 0 0 30px $y1;
+                }
             }
         }
     }
 
     article {
         width: 100%;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
 
         @media (max-width:719px) {
             flex-direction: column;
@@ -104,13 +118,30 @@
             gap: 50px;
             margin-bottom: 50px;
 
+
             h3 {
                 font-family: ToronoGlitchSerif-2;
             }
 
+            .elink {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .btnBack {
+                    cursor: pointer;
+                    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+                    &:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+
             .content {
                 p {
-                    // 4行省略
+                    font-weight: 600;
                     @extend %multiple-lines;
                     -webkit-line-clamp: 4;
                     margin-top: 10px;
