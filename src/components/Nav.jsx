@@ -34,7 +34,8 @@ const Nav = () => {
                 </button>
                 <ul className="menu">
                     <li><Link to="/">回到現在</Link></li>
-                    <li><Link to="/events">情報蒐集</Link></li>
+                    <li><Link to="/lists">情報列表</Link></li>
+                    <li><Link to="/events">情報詳情</Link></li>
                     <li><Link to="/test">時空測試</Link></li>
                     <li><Link to="/yearcount">時空倒數</Link></li>
                     <li><Link to="/fate">命運選擇</Link></li>

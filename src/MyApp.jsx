@@ -7,6 +7,7 @@ import Events from "./pages/Events"
 import Test from "./pages/Test"
 import YearCount from './components/YearCount'
 import Fate from './components/Fate'
+import Lists from './pages/Lists'
 
 const MyApp = () => {
   return (
@@ -18,6 +19,7 @@ const MyApp = () => {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/events' element={<Events />}></Route>
+        <Route path='/lists' element={<Lists />}></Route>
         <Route path='/test' element={<Test />}></Route>
         <Route path='/yearcount' element={<YearCount />}></Route>
         <Route path='/fate' element={<Fate />}></Route>
