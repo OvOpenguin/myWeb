@@ -1,0 +1,98 @@
+@use 'reset';
+@use './variables' as *;
+@use './function' as *;
+
+
+// * {
+//     outline: 1px solid red;
+// }
+
+.parent-container {
+    max-width: 670px;
+    width: 100%;
+}
+
+.tip {
+    padding: 0 40px;
+
+    @media (max-width:1247px) {
+        padding: 0 10px;
+    }
+
+    li {
+        border-bottom: 3px solid $b1;
+        margin-bottom: 15px;
+
+
+        &.active {
+            .tipAnswer {
+                max-height: 1000px !important;
+                padding-bottom: 15px;
+                transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+            }
+
+            .tipTitle {
+                color: $p1;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+
+    .tipAnswer {
+        color: $b1;
+        font-size: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+    }
+
+    .plus-minus-toggle {
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        cursor: pointer;
+        height: 21px;
+        width: 21px;
+        z-index: 2;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 21px;
+            height: 5px;
+            background: $b1;
+            transition: transform 500ms ease;
+
+            @media (max-width:944px) {
+                background: $y1;
+            }
+        }
+
+        &:after {
+            transform-origin: center;
+        }
+
+        &.collapsed {
+            &:after {
+                transform: rotate(90deg);
+            }
+
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .tipTitle {
+        position: relative;
+        padding: 20px 0;
+        color: $b1;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: color 0.5s ease;
+    }
+}

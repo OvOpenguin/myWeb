@@ -6,12 +6,12 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 import Home from "./pages/Home"
-import Events from "./pages/Events"
 import Test from "./pages/Test"
 import YearCount from './components/YearCount'
 import Fate from './components/Fate'
 import Lists from './pages/Lists'
-
+import Event1636 from "./pages/Event1636"
+import Event1720 from "./pages/Event1720"
 
 
 const MyApp = () => {
@@ -24,12 +24,14 @@ const MyApp = () => {
       {/* 內容區-新頁面可增加進來 */}
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/events' element={<Events />}></Route>
         <Route path='/lists' element={<Lists />}></Route>
         <Route path='/test' element={<Test />}></Route>
         <Route path='/yearcount' element={<YearCount />}></Route>
         <Route path='/fate' element={<Fate />}></Route>
         <Route path="/topic/:id" element={<Test />} />
+
+        <Route path='/event1636' element={<Event1636 />}></Route>
+        <Route path='/event1720' element={<Event1720 />}></Route>
       </Routes>
 
       {/* 頁尾區 */}

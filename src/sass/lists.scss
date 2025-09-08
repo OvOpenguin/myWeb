@@ -137,6 +137,18 @@
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
                     }
                 }
+
+                // 第二個按鈕樣式(暗色)
+                .b2 {
+                    border: 0.6px solid rgba(255, 255, 255, 0.70);
+                    background: rgba(255, 255, 255, 0.20);
+
+                    &:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.25);
+                    }
+                }
+
             }
 
             .content {
