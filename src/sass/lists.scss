@@ -4,7 +4,7 @@
 @use './keyframe';
 
 * {
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 #lists {
@@ -115,8 +115,9 @@
         .ecard {
             display: flex;
             justify-content: center;
+
             gap: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 50px;  
 
 
             h3 {
@@ -155,7 +156,7 @@
                 p {
                     font-weight: 600;
                     @extend %multiple-lines;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 5;
                     margin-top: 10px;
                 }
             }

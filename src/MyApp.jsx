@@ -12,6 +12,7 @@ import Fate from './components/Fate'
 import Lists from './pages/Lists'
 import Event1636 from "./pages/Event1636"
 import Event1720 from "./pages/Event1720"
+import Event1929 from "./pages/Event1929"
 
 
 const MyApp = () => {
@@ -32,6 +33,7 @@ const MyApp = () => {
 
         <Route path='/event1636' element={<Event1636 />}></Route>
         <Route path='/event1720' element={<Event1720 />}></Route>
+        <Route path='/event1929' element={<Event1929 />}></Route>
       </Routes>
 
       {/* 頁尾區 */}

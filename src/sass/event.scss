@@ -96,6 +96,12 @@
             span {
                 font-weight: 600;
                 color: $p1;
+
+                &.em{
+                    display: inline-block;
+                    font-size: 2rem;
+                    padding:20px 0;
+                }
             }
         }
 

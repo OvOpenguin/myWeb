@@ -295,7 +295,7 @@ section {
                 p {
                     // 4行省略
                     @extend %multiple-lines;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 6;
                     margin-top: 10px;
                 }
             }
