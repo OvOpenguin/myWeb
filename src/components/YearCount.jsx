@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { animate, motion } from "framer-motion";
+import { EventData } from "../json/EventData";
 import "../sass/home.scss";
 
 
@@ -11,33 +12,17 @@ export default function YearCounter() {
     const [bgImage, setBgImage] = useState("./home-select1.jpg");
     const nodeRef = useRef(null);
 
-    // 關鍵年份 & 對應事件 + 背景
-    const keyEvents = {
-        1636: {
-            text: "荷蘭鬱金香泡沫",
-            bg: "./hero-bg.png",
-        },
-        1700: {
-            text: "美國大蕭條",
-            bg: "./home-select1.jpg",
-        },
-        1750: {
-            text: "網路泡沫破裂",
-            bg: "./hero-bg.png",
-        },
-        1800: {
-            text: "金融海嘯",
-            bg: "./home-select1.jpg",
-        },
-        1900: {
-            text: "COVID-19 金融動盪",
-            bg: "./hero-bg.png",
-        },
-        2025: {
-            text: "大事件",
-            bg: "./home-select1.jpg",
-        }
-    };
+    // 關鍵年份 & 對應事件 + 背景(原先使用資料，已統整於EventData.js)
+    // const keyEvents = {
+    //     1636: {
+    //         text: "荷蘭鬱金香泡沫",
+    //         bg: "./hero-bg.png",
+    //     },
+    //     1720: {
+    //         text: "美國大蕭條",
+    //         bg: "./home-select1.jpg",
+    //     }
+    // };
 
     const startYear = 1600;
     const endYear = 2025;
@@ -55,14 +40,23 @@ export default function YearCounter() {
                 currentYear += 1;
                 setYear(currentYear);
 
-                // 如果是關鍵年份 → 暫停 & 顯示事件 + 換背景
-                if (keyEvents[currentYear]) {
-                    setEventText(keyEvents[currentYear].text);
-                    setBgImage(keyEvents[currentYear].bg);
+                // 如果是關鍵年份 → 暫停 & 顯示事件 + 換背景()
+                //     if (keyEvents[currentYear]) {
+                //         setEventText(keyEvents[currentYear].text);
+                //         setBgImage(keyEvents[currentYear].bg);
+                //         clearInterval(timer);
+                //         setTimeout(runCounter, 2000); // 停 2 秒後繼續
+                //     }
+                // }, 50); // 控制正數速度
+
+                const matchedEvent = EventData.find(e => e.year === currentYear); // 改用陣列查找!!
+                if (matchedEvent) {
+                    setEventText(matchedEvent.name);
+                    setBgImage(matchedEvent.bg);
                     clearInterval(timer);
-                    setTimeout(runCounter, 2000); // 停 2 秒後繼續
+                    setTimeout(runCounter, 2000);
                 }
-            }, 50); // 控制正數速度
+            }, 50);
         }
 
         runCounter();

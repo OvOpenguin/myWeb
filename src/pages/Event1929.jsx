@@ -1,4 +1,6 @@
 import Faq from '../components/Faq';
+import EventCard from '../components/EventCard';
+import { allEventsCards } from '../json/allEventsCards';
 import "../sass/event.scss";
 
 
@@ -40,8 +42,7 @@ const Events = () => {
       )
     },
   ]
-
-
+  const cardDetail = allEventsCards.e1929;
 
   return (
     <>
@@ -61,7 +62,13 @@ const Events = () => {
         </div>
 
         <div className="flow">
-          <div className="card">
+
+          {
+            cardDetail.map((cardData, index) => (
+              <EventCard key={index} data={cardData} />
+            ))
+          }
+          {/* <div className="card">
             <div className="year">19<br />20</div>
             <h4>事件背景</h4>
             <p> 戰後美國崛起：一次世界大戰後，美國成為全球最大債權國，工業與科技迅速發展，消費文化興起。
@@ -100,7 +107,7 @@ const Events = () => {
               <br /><span>緊急銀行法</span>與<span>國家工業復興法</span>如同「新政的雙引擎」：一個穩住金融，一個推動產業與就業。
               <br />政府角色：從放任市場轉向積極干預，奠定現代福利國家基礎，FDIC（美國聯邦存款保險公司）、SEC（證券交易委員會）、社會安全制度等，影響至今仍深遠。
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 

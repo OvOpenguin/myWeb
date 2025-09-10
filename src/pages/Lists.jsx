@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Link } from "react-router-dom"
 import '../sass/lists.scss';
+import Swiper from '../components/Swiper';
 
 const Lists = () => {
     // useRef 
@@ -18,6 +19,7 @@ const Lists = () => {
 
     return (
         <>
+            <Swiper />
             <section id='lists'>
                 <nav>
                     <ul>
@@ -105,7 +107,7 @@ const Lists = () => {
                                 <br />是什麼神奇的魔力讓著名科學家艾薩克·牛頓入局？
                                 <br />當時最聰明的頭腦，也逃不過人性的弱點。
                                 <br />這場金融狂熱讓南海公司股價一飛沖天，人人爭相投入，彷彿只要買進就能一夜致富。
-                                <br/>理性與貪婪的交鋒，讓英國社會陷入瘋狂的「南海泡沫」，看一位科學巨擘如何在金融風暴中迷失方向。</p>
+                                <br />理性與貪婪的交鋒，讓英國社會陷入瘋狂的「南海泡沫」，看一位科學巨擘如何在金融風暴中迷失方向。</p>
                         </div>
                     </div>
                     <div className="ecard">
@@ -182,7 +184,7 @@ const Lists = () => {
 
                     <div className="etitle"><h2 className="t2">19xx</h2></div>
 
-                     <div className="ecard">
+                    <div className="ecard">
                         <div className='elink'>
                             <h3>1929</h3>
                             <Link to="/event1929">
@@ -196,10 +198,10 @@ const Lists = () => {
                         </div>
                         <div className="content">
                             <h3>最後狂歡夜</h3>
-                            <p>一場看似永不止息的繁榮，竟在一夕之間崩塌——1929年華爾街股災，讓全美陷入前所未有的經濟深淵。 
-                                <br/>當時股市如脫韁野馬，人人爭相投資，銀行放貸毫不手軟，連家庭主婦都開始炒股。
-                                <br/>但在「黑色星期二」那天，股價如雪崩般狂跌，投資人哀鴻遍野，無數人一夜破產，美國夢瞬間碎裂。
-                                <br/>當貪婪的警鐘響起，震撼全球的「大蕭條序章」正式拉開帷幕。</p>
+                            <p>一場看似永不止息的繁榮，竟在一夕之間崩塌——1929年華爾街股災，讓全美陷入前所未有的經濟深淵。
+                                <br />當時股市如脫韁野馬，人人爭相投資，銀行放貸毫不手軟，連家庭主婦都開始炒股。
+                                <br />但在「黑色星期二」那天，股價如雪崩般狂跌，投資人哀鴻遍野，無數人一夜破產，美國夢瞬間碎裂。
+                                <br />當貪婪的警鐘響起，震撼全球的「大蕭條序章」正式拉開帷幕。</p>
                         </div>
                     </div>
                     <div className="ecard">

@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import '../sass/swiperbase.scss';
 
 // My Data
-import { History } from '../json/History';
+import { EventData } from "../json/EventData";
 
 
 
@@ -31,24 +31,10 @@ export default function App() {
     return (
         <section id='swiperBanner'>
 
-            <div className="timeline">
-                {History.map((event, index) => (
-                    <button
-                        key={event.id}
-                        onClick={() => swiperRef.current.slideToLoop(index)}
-                        className="timeline-btn"
-                    >
-                        {event.time}
-                    </button>
-                ))}
-            </div>
-
-
             <Swiper
                 className="mySwiper"
                 spaceBetween={30}
                 centeredSlides={true}
-                effect=''
                 loop={true}
                 autoplay={{
                     delay: 4000,
@@ -61,11 +47,11 @@ export default function App() {
             >
 
                 {
-                    History.map((event) => (
+                    EventData.map((event) => (
                         <SwiperSlide key={event.id}>
-                            <div className='title st'><h1>{event.time}</h1></div>
+                            <div className='title st'><h1>{event.year}</h1></div>
                             <div className='se'><h4>{event.name}</h4></div>
-                            <img src={event.image} alt={event.name} />
+                            <img src={event.bg} alt={event.name} />
                         </SwiperSlide>
                     ))
                 }
