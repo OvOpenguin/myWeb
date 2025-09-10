@@ -14,6 +14,7 @@ import Lists from './pages/Lists'
 import Event1636 from "./pages/Event1636"
 import Event1720 from "./pages/Event1720"
 import Event1929 from "./pages/Event1929"
+import Event1997 from "./pages/Event1997"
 
 import Swiper from "./components/Swiper"
 
@@ -38,6 +39,7 @@ const MyApp = () => {
         <Route path='/event1636' element={<Event1636 />}></Route>
         <Route path='/event1720' element={<Event1720 />}></Route>
         <Route path='/event1929' element={<Event1929 />}></Route>
+        <Route path='/event1997' element={<Event1997 />}></Route>
       </Routes>
 
       {/* 頁尾區 */}

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { animate, motion } from "framer-motion";
-import { EventData } from "../json/EventData";
+import { EventData } from "../data/EventData";
 import "../sass/home.scss";
 
 

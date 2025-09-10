@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import '../sass/swiperbase.scss';
 
 // My Data
-import { EventData } from "../json/EventData";
+import { EventData } from "../data/EventData";
 
 
 

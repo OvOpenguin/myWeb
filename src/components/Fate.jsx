@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { scenarios } from '../json/ScenarioData';
+import { scenarios } from '../data/ScenarioData';
 
 import "../sass/home.scss";
 

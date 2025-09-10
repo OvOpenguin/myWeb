@@ -173,7 +173,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { scenarios } from '../json/ScenarioData'; // 假設你把章節資料抽成獨立檔案
+import { scenarios } from '../data/ScenarioData'; // 假設你把章節資料抽成獨立檔案
 
 import "../sass/test.scss"
 

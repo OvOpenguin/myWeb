@@ -1,6 +1,6 @@
 import Faq from '../components/Faq';
 import EventCard from '../components/EventCard';
-import { allEventsCards } from '../json/allEventsCards';
+import { allEventsCards } from '../data/allEventsCards';
 import "../sass/event.scss";
 
 
@@ -77,8 +77,11 @@ const Events = () => {
           <p>政府債務 →金融創新：南海公司本質是政府融資工具，非真正貿易公司。
             <br />炒作與貪婪：誇大前景、名人背書、全民投機，形成非理性泡沫。
             <br />制度失靈：政府與公司勾結，立法打擊競爭者，反而加速崩盤。
-            <br />人性弱點：牛頓的失敗揭示，即使理性天才也難敵群體狂熱與「踏空焦慮」。
+            <br />人性弱點：牛頓的失敗揭示，即使理性天才也難敵群體狂熱。
             <br />長期影響：事件重創英國金融市場，股票交易冷卻近一世紀。
+            <br/>
+            <br />南海泡沫是「泡沫經濟」一詞的起源，與鬱金香狂熱、密西西比泡沫並列歐洲三大早期金融災難。它提醒我們：資本市場的活力來自創新，但創新必須在制度與誠信的框架下進行。
+            <br />每一次泡沫，都是一次制度與人性的壓力測試。
           </p>
         </div>
       </section>

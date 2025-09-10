@@ -2,7 +2,7 @@ export const EventData = [
   {
     id:1,
     year: 1636,
-    name: "荷蘭鬱金香泡沫",
+    name: "鬱金香狂熱",
     bg: "./hero-bg.png"
   },
   {
@@ -19,8 +19,8 @@ export const EventData = [
   },
   {
     id:4,
-    year: 2008,
-    name: "金融海嘯",
+    year: 1997,
+    name: "亞洲金融風暴",
     bg: "./home-select1.jpg"
   },
   {

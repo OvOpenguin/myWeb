@@ -1,6 +1,6 @@
 import Faq from '../components/Faq';
 import EventCard from '../components/EventCard';
-import { allEventsCards } from '../json/allEventsCards';
+import { allEventsCards } from '../data/allEventsCards';
 import "../sass/event.scss";
 
 
