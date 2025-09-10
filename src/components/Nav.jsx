@@ -39,6 +39,7 @@ const Nav = () => {
                     <li><Link to="/test">時空測試</Link></li>
                     <li><Link to="/yearcount">時空倒數</Link></li>
                     <li><Link to="/fate">命運選擇</Link></li>
+                    <li><Link to="/swiper">大圖輪播</Link></li>
                 </ul>
             </nav>
         </header>

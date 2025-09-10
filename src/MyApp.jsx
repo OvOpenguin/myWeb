@@ -10,9 +10,12 @@ import Test from "./pages/Test"
 import YearCount from './components/YearCount'
 import Fate from './components/Fate'
 import Lists from './pages/Lists'
+
 import Event1636 from "./pages/Event1636"
 import Event1720 from "./pages/Event1720"
 import Event1929 from "./pages/Event1929"
+
+import Swiper from "./components/Swiper"
 
 
 const MyApp = () => {
@@ -28,6 +31,7 @@ const MyApp = () => {
         <Route path='/lists' element={<Lists />}></Route>
         <Route path='/test' element={<Test />}></Route>
         <Route path='/yearcount' element={<YearCount />}></Route>
+        <Route path='/swiper' element={<Swiper />}></Route>
         <Route path='/fate' element={<Fate />}></Route>
         <Route path="/topic/:id" element={<Test />} />
 
