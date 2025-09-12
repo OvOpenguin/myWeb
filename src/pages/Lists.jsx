@@ -1,9 +1,13 @@
 import { useRef } from 'react';
 import { Link } from "react-router-dom"
-import '../sass/lists.scss';
+
 import Swiper from '../components/Swiper';
 import BackBtnBlack from '../components/BackBtnBlack';
 import BackBtnWhite from '../components/BackBtnWhite';
+
+import '../sass/lists.scss';
+
+
 const Lists = () => {
     // useRef 
     const c16Ref = useRef(null);
@@ -11,8 +15,6 @@ const Lists = () => {
     const c18Ref = useRef(null);
     const c19Ref = useRef(null);
     const c20Ref = useRef(null);
-
-    // svg
 
     const handleScrollTo = (ref) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -180,6 +182,28 @@ const Lists = () => {
 
                     <div className="ecard">
                         <div className='elink'>
+                            <h3>2009</h3>
+                            <Link to="/event2009">
+                                <button className="btnBack">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 22 19" fill="none">
+                                        <path d="M12.2342 10.5694L20.4148 18.0775C21.109 18.714 22 17.9433 22 16.6601V1.64387C22 0.362691 21.1103 -0.410082 20.4148 0.228472L12.2342 7.73657C12.0763 7.87918 11.945 8.08531 11.8537 8.33406C11.7624 8.58282 11.7143 8.86534 11.7143 9.15298C11.7143 9.44063 11.7624 9.72315 11.8537 9.97191C11.945 10.2207 12.0763 10.4268 12.2342 10.5694Z" fill="#323232" />
+                                        <path d="M1.30564 10.5694L9.48623 18.0775C10.1805 18.714 11.0714 17.9433 11.0714 16.6601V1.64387C11.0714 0.362691 10.1818 -0.410082 9.48623 0.228472L1.30564 7.73657C1.14771 7.87918 1.01644 8.08531 0.925128 8.33406C0.833821 8.58282 0.785728 8.86534 0.785728 9.15298C0.785728 9.44063 0.833821 9.72315 0.925128 9.97191C1.01644 10.2207 1.14771 10.4268 1.30564 10.5694Z" fill="#323232" />
+                                    </svg>
+                                </button>
+                            </Link>
+                        </div>
+                        <div className="content">
+                            <h3>比特幣崛起</h3>
+                            <p>歷史上最反骨的金融創舉，一串程式碼竟敢挑戰央行的權威？
+                                <br />不只是科技圈的狂歡，更是制度信仰的重新洗牌。
+                                <br />從匿名白皮書到披薩交易的「比特幣革命」，看虛擬貨幣如何在金融海嘯的餘燼中誕生
+                                <br />一步步走向全球舞台，挑戰我們對價值、權力與信任的既定認知。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="ecard">
+                        <div className='elink'>
                             <h3>2021</h3>
                             <Link to="/event2021">
                                 <button className="btnBack">
@@ -192,32 +216,6 @@ const Lists = () => {
                         </div>
                         <div className="content">
                             <h3>GameStop史詩級軋空</h3>
-                            <p>歷史上最離奇的泡沫經濟，一朵鬱金香的價格竟然能買下一棟豪宅？
-                                <br />不只是花市的瘋狂，更是人性與資本的鏡像。
-                                <br />深入了解這場讓整個荷蘭為之瘋狂的「鬱金香狂熱」，看小小花卉如何引發一場席捲全國的金融風暴。</p>
-                        </div>
-                    </div>
-                    <div className="ecard">
-                        {/* 年分+按鈕 */}
-                        <div>
-                            <h3>1636</h3>
-                        </div>
-                        {/* 標題內文 */}
-                        <div className="content">
-                            <h3>鬱金香狂潮</h3>
-                            <p>歷史上最離奇的泡沫經濟，一朵鬱金香的價格竟然能買下一棟豪宅？
-                                <br />不只是花市的瘋狂，更是人性與資本的鏡像。
-                                <br />深入了解這場讓整個荷蘭為之瘋狂的「鬱金香狂熱」，看小小花卉如何引發一場席捲全國的金融風暴。</p>
-                        </div>
-                    </div>
-                    <div className="ecard">
-                        {/* 年分+按鈕 */}
-                        <div>
-                            <h3>1636</h3>
-                        </div>
-                        {/* 標題內文 */}
-                        <div className="content">
-                            <h3>鬱金香狂潮</h3>
                             <p>歷史上最離奇的泡沫經濟，一朵鬱金香的價格竟然能買下一棟豪宅？
                                 <br />不只是花市的瘋狂，更是人性與資本的鏡像。
                                 <br />深入了解這場讓整個荷蘭為之瘋狂的「鬱金香狂熱」，看小小花卉如何引發一場席捲全國的金融風暴。</p>

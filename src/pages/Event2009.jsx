@@ -37,7 +37,7 @@ const Events = () => {
             )
         },
     ]
-    const cardDetail = allEventsCards.e2021;
+    const cardDetail = allEventsCards.e2009;
 
     return (
         <>
@@ -45,7 +45,7 @@ const Events = () => {
             <section id="eventTitle">
                 <div className="ehead">
                     <h2>20</h2>
-                    <h3>09　比特幣誕生</h3>
+                    <h3>09　比特幣(Bitcoin)崛起</h3>
                 </div>
             </section>
 
@@ -72,10 +72,9 @@ const Events = () => {
             <section id="eventResult" >
                 <div className="card">
                     <h4>事件總結</h4>
-                    <p>GameStop 軋空事件不只是一次金融市場的異常波動，更是一場由散戶集體意識驅動的社會現象。
-                        <br />它揭示了數位時代下資訊傳播的力量、平台制度的脆弱，以及世代間對財富與權力分配的深層不滿。
-                        <br />金融市場不再只是機構的遊戲場，而是情緒、文化與科技交織的戰場。
-                        <br />在迷因與數據之間，投資行為正逐漸轉化為一種敘事、一種參與感，也是一種對現實秩序的挑戰。
+                    <p>比特幣不是一夜爆紅的投資工具，而是對「貨幣、信任、權力」的重新定義。
+                        <br />從中本聰的匿名，到創世區塊的發佈，再到披薩交易的實用性，比特幣的每一步都蘊含深意。
+                        <br /> 它挑戰了我們對金融的既定認知，也開啟了去中心化經濟的可能性。
                     </p>
                 </div>
             </section>

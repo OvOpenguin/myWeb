@@ -15,6 +15,7 @@ import Event1636 from "./pages/Event1636"
 import Event1720 from "./pages/Event1720"
 import Event1929 from "./pages/Event1929"
 import Event1997 from "./pages/Event1997"
+import Event2009 from "./pages/Event2009"
 import Event2021 from "./pages/Event2021"
 
 import Swiper from "./components/Swiper"
@@ -41,6 +42,7 @@ const MyApp = () => {
         <Route path='/event1720' element={<Event1720 />}></Route>
         <Route path='/event1929' element={<Event1929 />}></Route>
         <Route path='/event1997' element={<Event1997 />}></Route>
+        <Route path='/event2009' element={<Event2009 />}></Route>
         <Route path='/event2021' element={<Event2021 />}></Route>
       </Routes>
 

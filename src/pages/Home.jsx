@@ -1,9 +1,9 @@
-import "../sass/home.scss";
-import btnBack from '../images/btn-back.svg';
-import YearCounter from "../components/YearCount";
-import Fate from "../components/Fate";
 import { Link } from "react-router-dom";
 
+import YearCounter from "../components/YearCount";
+import Fate from "../components/Fate";
+
+import "../sass/home.scss";
 
 const Home = () => {
     return (
