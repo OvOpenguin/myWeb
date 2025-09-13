@@ -3,9 +3,9 @@
 @use './function' as *;
 @use './keyframe';
 
-// * {
-//     outline: solid 1px red;
-// }
+* {
+    outline: solid 1px red;
+}
 
 // 標題區
 #eventTitle {
@@ -101,6 +101,7 @@
                     display: inline-block;
                     font-size: 2rem;
                     padding:20px 0;
+                    line-height: 2rem;
                 }
             }
         }

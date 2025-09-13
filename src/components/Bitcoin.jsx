@@ -42,7 +42,7 @@ const BitcoinChart = () => {
     labels: [
       '2010', '2011', '2012', '2013', '2014', '2015',
       '2016', '2017', '2018', '2019', '2020',
-      '2021', '2022', '2023', '2024', '2025(今年突破12萬!?)'
+      '2021', '2022', '2023', '2024', '2025'
     ],
     datasets: [
       {
@@ -124,7 +124,6 @@ const BitcoinChart = () => {
         width: '100%',
         maxWidth: '800px',
         margin: '0 auto',
-        padding: '1rem',
       }}
     >
       <div style={{ position: 'relative', width: '100%', height:"400px" }}>

@@ -294,6 +294,8 @@ section {
             .content {
                 flex: 2;
                 padding: 0 20px;
+                max-width: 800px;
+                width: 100%;
 
                 p {
                     // 4行省略
