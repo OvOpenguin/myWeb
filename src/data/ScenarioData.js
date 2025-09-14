@@ -20,7 +20,7 @@ export const scenarios = [
                 truth: '1980年代美國聯準會曾採取此策略'
             }
         },
-        image: './hero-bg.png',
+        image: './1929經濟大蕭條/經濟大蕭條_banner2.jpg',
     },
     {   
         id:'2',

@@ -51,7 +51,7 @@ export default function App() {
                         <SwiperSlide key={event.id}>
                             <div className='title st'><h1>{event.year}</h1></div>
                             <div className='se'><h4>{event.name}</h4></div>
-                            <img src={event.bg} alt={event.name} />
+                            <img src={event.bg} alt={event.name}  />
                         </SwiperSlide>
                     ))
                 }

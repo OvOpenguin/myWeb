@@ -9,20 +9,8 @@ import "../sass/home.scss";
 export default function YearCounter() {
     const [year, setYear] = useState(1636);
     const [eventText, setEventText] = useState("");
-    const [bgImage, setBgImage] = useState("./home-select1.jpg");
+    const [bgImage, setBgImage] = useState("./hero-bg.jpg");
     const nodeRef = useRef(null);
-
-    // 關鍵年份 & 對應事件 + 背景(原先使用資料，已統整於EventData.js)
-    // const keyEvents = {
-    //     1636: {
-    //         text: "荷蘭鬱金香泡沫",
-    //         bg: "./hero-bg.png",
-    //     },
-    //     1720: {
-    //         text: "美國大蕭條",
-    //         bg: "./home-select1.jpg",
-    //     }
-    // };
 
     const startYear = 1600;
     const endYear = 2025;
@@ -84,6 +72,7 @@ export default function YearCounter() {
         <section id="banner"
             style={{
                 backgroundImage: bgImage ? `url(${bgImage})` : "none",
+                backgroundAttachment: "fixed"
             }}
         >
             {/* 年份 */}

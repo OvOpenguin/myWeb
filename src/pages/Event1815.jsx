@@ -33,7 +33,7 @@ const Events = () => {
             )
         },
     ]
-    const cardDetail = allEventsCards.e1864;
+    const cardDetail = allEventsCards.e1815;
 
     return (
         <>

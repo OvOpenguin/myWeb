@@ -3,13 +3,6 @@
 @use './function' as *;
 @use './keyframe';
 
-* {
-    // outline: solid 1px red;
-}
-
-
-
-
 // 共用區
 .description-text {
     white-space: pre-wrap;
