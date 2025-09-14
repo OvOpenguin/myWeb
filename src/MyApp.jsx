@@ -17,6 +17,7 @@ import Event1720 from "./pages/Event1720"
 import Event1815 from "./pages/Event1815"
 import Event1864 from "./pages/Event1864"
 import Event1929 from "./pages/Event1929"
+import Event1987 from "./pages/Event1987"
 import Event1997 from "./pages/Event1997"
 import Event2008 from "./pages/Event2008"
 import Event2009 from "./pages/Event2009"
@@ -48,6 +49,7 @@ const MyApp = () => {
         <Route path='/event1815' element={<Event1815 />}></Route>
         <Route path='/event1864' element={<Event1864 />}></Route>
         <Route path='/event1929' element={<Event1929 />}></Route>
+        <Route path='/event1987' element={<Event1987 />}></Route>
         <Route path='/event1997' element={<Event1997 />}></Route>
         <Route path='/event2008' element={<Event2008 />}></Route>
         <Route path='/event2009' element={<Event2009 />}></Route>
