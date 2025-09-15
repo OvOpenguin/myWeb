@@ -70,7 +70,7 @@ const Events = () => {
 
             {/* 總結區 */}
             <section id="eventResult" >
-                <div className="card">
+                <div className="eCard">
                     <h4>事件總結</h4>
                     <p>GameStop 軋空事件不只是一次金融市場的異常波動，更是一場由散戶集體意識驅動的社會現象。
                         <br />它揭示了數位時代下資訊傳播的力量、平台制度的脆弱，以及世代間對財富與權力分配的深層不滿。

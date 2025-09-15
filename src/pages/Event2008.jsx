@@ -90,7 +90,7 @@ const Events = () => {
 
             {/* 總結區 */}
             <section id="eventResult" >
-                <div className="card">
+                <div className="eCard">
                     <h4>事件總結</h4>
                     <p>2008年，一場由次級房貸引爆的金融骨牌效應，讓雷曼兄弟倒下、AIG求援，全球市場陷入恐慌。
                         <br />CDO、MBS、CDS——這些金融工程的縮寫，成了制度失靈的代號。

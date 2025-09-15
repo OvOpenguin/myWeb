@@ -68,13 +68,17 @@ const Events = () => {
                     }
 
                 </div>
+
+                {/* 航海區 */}
+                <div></div>
+
             </section>
 
 
 
             {/* 總結區 */}
             <section id="eventResult" >
-                <div className="card">
+                <div className="eCard">
                     <h4>事件總結</h4>
                     <p>約翰·勞的設計初衷是好的：用紙幣與股票制度解決國債、刺激經濟。
                         <br />現代貨幣本質上也是「信任的產物」，但當時的制度、技術與社會條件，還不足以支撐這種信任的規模與穩定性。

@@ -87,7 +87,7 @@ const Events = () => {
 
             {/* 總結區 */}
             <section id="eventResult" >
-                <div className="card">
+                <div className="eCard">
                     <h4>事件總結</h4>
                     <p>亞洲國家過度依賴外資、資產泡沫化、固定匯率制度脆弱
                         <br />1997年亞洲金融風暴揭示了表面繁榮背後的結構性脆弱，也提醒我們：金融自由化若缺乏穩健制度與風險意識，將可能引發毀滅性的連鎖反應。

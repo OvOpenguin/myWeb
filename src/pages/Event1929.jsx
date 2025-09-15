@@ -74,7 +74,7 @@ const Events = () => {
 
       {/* 總結區 */}
       <section id="eventResult" >
-        <div className="card">
+        <div className="eCard">
           <h4>事件總結</h4>
           <p>資產幻象：1920年代工業擴張與消費文化興盛。
             <br />群體狂熱：樂觀情緒下，人們相信股市只漲不跌，導致盲目投資。
