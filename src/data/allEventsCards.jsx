@@ -8,11 +8,13 @@ export const allEventsCards = {
             heading: '事件背景',
             content: (
                 <>
+                    <img src="./鬱金香泡沫/paint06.jpg" alt="鬱金香" className='tulipa' />
                     發生在17世紀荷蘭的黃金時代。
                     <br />這場狂熱的起源是鬱金香。
                     <br />鬱金香原本是一種從土耳其傳入的異國花卉，在荷蘭迅速成為社會地位和財富的象徵。
                     <br />人們開始不惜重金收藏稀有品種，特別是那些帶有<span>碎色病毒</span>、花瓣上呈現火焰般條紋的品種。
                     <br />隨需求不斷增加，鬱金香價格以驚人的速度飆升。
+
                 </>
             ),
         },
@@ -21,6 +23,7 @@ export const allEventsCards = {
             heading: '事件爆發',
             content: (
                 <>
+                
                     這場瘋狂的投機最終在
                     <br /><span className='em'>1637年2月崩潰</span>
                     <br />一位鬱金香經銷商因找不到買家無法履行合約，導致市場恐慌。
@@ -40,6 +43,7 @@ export const allEventsCards = {
                     <br />這種「只賠定金、不限獲利」的設計，讓全民瘋狂押注，成為早期期權交易的雛形。
                     <br />最終泡沫破裂，政府介入，宣布所有合約只需支付3.5%即可解約，等於官方「割韭菜」止血。
                     <br />鬱金香狂熱的破滅，被視為一個經典的投機泡沫案例。
+                    <img src="./鬱金香泡沫/paint03.jpg" alt="鬱金香" className='tulipa2'/>
                 </>
             ),
         },
@@ -171,6 +175,7 @@ export const allEventsCards = {
             heading: '名人軼事',
             content: (
                 <>
+                    <div className='newton'><img src="./南海泡沫/牛頓.webp" alt="牛頓" /></div>
                     英國著名科學家艾薩克·牛頓參與了南海公司股票的投資。
                     <br />他最初以相對低價買入股票，並在股價上漲後理性地獲利出場。
                     <br />然而，隨著股價持續飆升，他感到錯失更大獲利機會，於是重新投入大量資金。

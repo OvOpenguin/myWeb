@@ -71,8 +71,8 @@ const Events = () => {
 
 
       {/* 總結區 */}
-      <section id="eventResult" >
-        <div className="card">
+      <section id="eventResult">
+        <div className="eCard">
           <h4>事件總結</h4>
           <p>當人們的投機心理脫離資產的實際價值時，會引發多麼巨大的風險。
             <br />這個故事至今仍被用來警惕投資者，提醒他們在市場上保持理性，避免被非理性的狂熱所驅使。
