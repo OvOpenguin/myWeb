@@ -7,11 +7,12 @@
 
 #lists {
     position: relative;
+    // overflow: hidden;
 
     nav {
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 3;
         width: 100%;
         background: $b1;
         color: #fff;
@@ -46,6 +47,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
 
         a {
             text-decoration: none;
@@ -113,13 +115,102 @@
             }
         }
 
+        .img1 {
+            position: absolute;
+            width: 400px;
+            right: 10%;
+            top: -100%;
+        }
+
+        .img2 {
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            left: 10%;
+            bottom: 0;
+        }
+
+        .img3 {
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            right: 10%;
+            bottom: 0;
+        }
+
+        .img4 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            right: 10%;
+            bottom: 150px;
+        }
+
+        .img5 {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
+            left: 10%;
+            bottom: 0;
+        }
+
+        .img6 {
+            position: absolute;
+            z-index: 1;
+            width: auto;
+            height: auto;
+            right: 0;
+            bottom: 0;
+        }
+
+        .img7 {
+            position: absolute;
+            z-index: 1;
+            width: 500px;
+            height: 200px;
+            left: 0;
+            bottom: 0;
+            transform: rotate(10deg);
+        }
+
+        .img8 {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 0;
+        }
+
+        .img9 {
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            right: 5%;
+            bottom: 0;
+        }
+
+        .img10 {
+            position: absolute;
+            z-index: 1;
+            width: 150px;
+            left: 5%;
+            bottom: 0;
+            transform: rotate(-20deg);
+            filter: grayscale(0.5);
+        }
+
+        img {
+            @extend %img-cover
+        }
+
         .ecard {
+
+            position: relative;
             display: flex;
             justify-content: center;
 
             gap: 50px;
             margin-bottom: 50px;
-
 
             h3 {
                 font-family: ToronoGlitchSerif-2;
