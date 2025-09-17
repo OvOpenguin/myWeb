@@ -23,7 +23,7 @@ export const allEventsCards = {
             heading: '事件爆發',
             content: (
                 <>
-                
+
                     這場瘋狂的投機最終在
                     <br /><span className='em'>1637年2月崩潰</span>
                     <br />一位鬱金香經銷商因找不到買家無法履行合約，導致市場恐慌。
@@ -43,7 +43,7 @@ export const allEventsCards = {
                     <br />這種「只賠定金、不限獲利」的設計，讓全民瘋狂押注，成為早期期權交易的雛形。
                     <br />最終泡沫破裂，政府介入，宣布所有合約只需支付3.5%即可解約，等於官方「割韭菜」止血。
                     <br />鬱金香狂熱的破滅，被視為一個經典的投機泡沫案例。
-                    <img src="./鬱金香泡沫/paint03.jpg" alt="鬱金香" className='tulipa2'/>
+                    <img src="./鬱金香泡沫/paint03.jpg" alt="鬱金香" className='tulipa2' />
                 </>
             ),
         },
@@ -68,6 +68,7 @@ export const allEventsCards = {
             heading: '黃金之地的幻想',
             content: (
                 <>
+                    <img src="./密西西比泡沫/boat.svg" alt="boat" className='boat' />
                     1716年：勞獲准成立「通用銀行」，發行紙幣並允許用來繳稅，建立信用基礎。
                     <br />1717年：勞收購「密西西比公司」，獲得路易斯安那貿易壟斷權，目的是讓公司成為「國家級企業」，吸引資金並償還國債。
                     <br />法國政府與公司大肆宣傳：路易斯安那擁有豐富的金礦、銀礦、香料與肥沃土地，只要投資公司，就能參與開發新世界，甚至移民定居。
@@ -85,7 +86,7 @@ export const allEventsCards = {
             year: '17<br />20',
             heading: '事件爆發',
             content: (
-                <>
+                <>  
                     投資人開始想兌換黃金，為防止黃金外流與紙幣信用崩潰，勞限制大額交易使用黃金，並不斷印製銀行券，試圖維持紙幣流通與市場信心。
                     <br />為抑制通膨與擠兌潮，勞宣布銀行券貶值50%、股票價格下調，此舉反而引發群眾恐慌與信任崩潰。
                     <br /><span className='em'>1720年5月27日 密西西比公司股價暴跌 </span>
@@ -126,6 +127,8 @@ export const allEventsCards = {
                     <br />
                     <br />泡沫破裂後，他被迫辭去財政大臣職位，先後流亡至布魯塞爾、熱那亞、羅馬等地，途中仍過著奢華生活，靠賭術維生。
                     <br />最終定居於義大利威尼斯，於1729年病逝，享年57歲
+                    
+
                 </>
             ),
         },
@@ -175,7 +178,6 @@ export const allEventsCards = {
             heading: '名人軼事',
             content: (
                 <>
-                    <div className='newton'><img src="./南海泡沫/牛頓.webp" alt="牛頓" /></div>
                     英國著名科學家艾薩克·牛頓參與了南海公司股票的投資。
                     <br />他最初以相對低價買入股票，並在股價上漲後理性地獲利出場。
                     <br />然而，隨著股價持續飆升，他感到錯失更大獲利機會，於是重新投入大量資金。
@@ -203,7 +205,7 @@ export const allEventsCards = {
         },
         {
             year: '18<br />15',
-            heading: '事件爆發',
+            heading: '飛鴿傳書',
             content: (
                 <>
                     6月18日：<span className='em'>滑鐵盧戰役爆發</span>，英軍與普魯士聯軍擊敗拿破崙。

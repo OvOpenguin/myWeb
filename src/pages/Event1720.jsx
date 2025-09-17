@@ -1,11 +1,42 @@
+import { useEffect, useState } from 'react';
 import Faq from '../components/Faq';
 import EventCard from '../components/EventCard';
 import { allEventsCards } from '../data/allEventsCards';
 import "../sass/event.scss";
-import "../sass/effect.scss";
+
+
+
 
 
 const Events = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+  // 監聽滾動Y軸
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll); // 清理
+  }, []);
+
+  // 視差
+  const getParallaxStyle = (
+    speedY = 0.5, offsetY = 0,
+    speedX = 0, offsetX = 0,
+    speedZ = 0, offsetZ = 0,
+    fadeSpeed = 0, fadeOffset = 0
+  ) => {
+    const translateY = (scrollY - offsetY) * speedY;
+    const translateX = (scrollY - offsetX) * speedX;
+    const scale = Math.max(0.3, Math.min(3.0, 1 + (scrollY - offsetZ) * speedZ)); // 限制縮放範圍
+    const opacity = fadeSpeed !== 0
+      ? Math.max(0, Math.min(1, 1 + (scrollY - fadeOffset) * fadeSpeed))
+      : 1;
+
+    return {
+      transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
+      opacity: opacity,
+    };
+  };
 
   const faqItems = [
     {
@@ -61,11 +92,18 @@ const Events = () => {
         </div>
 
         <div className="flow">
+
+          <div className='bimg'>
+            <img style={getParallaxStyle(-0.8, 0, 0, 0)} src="./南海泡沫/南海泡沫_1.webp" alt="南海泡沫" />
+          </div>
           {
             cardDetail.map((cardData, index) => (
               <EventCard key={index} data={cardData} />
             ))
           }
+        </div>
+        <div className='john'>
+          <img style={getParallaxStyle(-0.7, 1000, 0, 0)} src="./南海泡沫/牛頓-去背.png" alt="牛頓" />
         </div>
 
         {/* 泡泡區 */}
