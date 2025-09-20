@@ -5,7 +5,7 @@ import BackBtnWhite from './BackBtnWhite';
 
 import "../sass/home.scss";
 
-
+const initialScenarios = scenarios.filter(scenario => !scenario.id.includes('-'));
 
 function RandomTopicSelector() {
     // 將初始狀態設為 null
@@ -19,7 +19,7 @@ function RandomTopicSelector() {
             const img = new Image();
             img.src = topic.image;
         });
-    }, []); // 傳入空陣列，確保這段程式碼只在元件初次渲染時執行一次
+    }, []);
 
 
     const handleStartSelect = () => {
@@ -30,8 +30,8 @@ function RandomTopicSelector() {
         const maxSwitch = 15;
 
         const switchInterval = setInterval(() => {
-            const randomIndex = Math.floor(Math.random() * scenarios.length);
-            setCurrentScenario(scenarios[randomIndex]);
+            const randomIndex = Math.floor(Math.random() * initialScenarios.length);
+            setCurrentScenario(initialScenarios[randomIndex]);
             count++;
 
             if (count >= maxSwitch) {

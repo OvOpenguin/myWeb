@@ -29,7 +29,7 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
     const currentDecision = selected !== null && data.decisions[selected] ? data.decisions[selected] : null;
 
     return (
-        <section id="test">
+        <section className="test">
             {/* 1. 場景標題與內容 - 固定顯示在最上方 */}
             <div className='test-subject'><h3>{data.name}</h3></div>
             <div className='test-content'>
@@ -80,7 +80,7 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
 
                 {/* 顯示決策結果和歷史真相的區塊 */}
                 {!isFinalOutcome && decisionMade && currentDecision && (
-                    <>
+                    <div className='resultbox'>
                         <div className='release-result'>
                             <h5>決策結果</h5>
                             <div className='outcome'>
@@ -107,24 +107,26 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
                                 </div>
                             </div>
                         )}
-                    </>
+                    </div>
                 )}
             </div>
 
             {/* 4. 最終結局 - 只在結局出現時顯示 */}
             {isFinalOutcome && (
+
                 <div className='final-result'>
                     <h5>{data.name}</h5>
                     <div className='outcome'>
                         <p>{data.intro}</p>
                     </div>
-                    {/* 新增「重新選擇」按鈕 */}
-                    <div className='cross'>
+                    <div className='again'>
                         <button className="check" onClick={onRestart}>
                             🔄 重新選擇
                         </button>
                     </div>
+
                 </div>
+
             )}
 
         </section>
@@ -213,7 +215,7 @@ function ScenarioManager() {
     const isFinalOutcome = !currentScenario.decisions || currentScenario.decisions.length === 0;
 
     return (
-        <main className='testwrap'>
+        <main id='testwrap'>
             <Scenario
                 key={currentScenario.id}
                 data={currentScenario}
@@ -221,8 +223,6 @@ function ScenarioManager() {
                 decisionPath={decisionPath}
                 onRestart={handleRestart}
             />
-
-
             <section id='box'>
                 <button className='check' onClick={handleJumpToRandomChapter}>
                     🎲 隨機跳轉時空

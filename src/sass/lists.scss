@@ -16,7 +16,6 @@
         width: 100%;
         background: $b1;
         color: #fff;
-        font-family: Genkai;
 
         ul {
             display: flex;
@@ -26,6 +25,8 @@
 
 
             li {
+                font-family: ToronoGlitchSerif-2;
+                font-weight: normal;
                 font-size: 1.5rem;
                 padding: 20px 15px;
                 text-shadow: 0 0 0px $b1;

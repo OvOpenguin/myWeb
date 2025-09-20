@@ -367,7 +367,7 @@ export const scenarios = [
                 時間：1929年9月，你剛上任美國經濟部長。面對股市狂飆與信貸膨脹，你會怎麼做？
             </>
         ),
-        image: './images/1929.jpg',
+        image: '/hero-bg.jpg',
         decisions: [
             {
                 text: '向大眾公開警告風險',
@@ -414,7 +414,7 @@ export const scenarios = [
         id: '1720',
         name: '金融賭局：1720年密西西比泡沫',
         intro: '你是一名法國貴族，意外得知約翰·勞的「新世界」其實是個巨大騙局，你該如何應對？',
-        image: './images/1720.jpg',
+        image: '/images/1720.jpg',
         decisions: [
             {
                 text: '立即拋售所有股票，並將資產轉移至國外',
@@ -497,7 +497,7 @@ export const scenarios = [
                 <br /><strong>你的任務： 在這場前所未有的泡沫中，你必須利用你的商業嗅覺，做出正確的決策。</strong>
             </>
         ),
-        image: './images/1636.jpg',
+        image: '/images/1636.jpg',
         decisions: [
             {
                 text: '立即投入所有資金，瘋狂囤積稀有品種',
@@ -527,7 +527,7 @@ export const scenarios = [
                 你的期權合約讓你在初期賺得盆滿缽滿。然而，你聽聞市場已經充斥著不持有實體球莖的投機者，這場遊戲變成了「傳花遊戲」。
             </>
         ),
-        image: './images/1636-q2b.jpg',
+        image: '/images/1636-q2b.jpg',
         decisions: [
             {
                 text: '繼續追加投資，相信泡沫還會更大',
@@ -558,7 +558,7 @@ export const scenarios = [
                 你是在2008年金融風暴中失業的普通人。在一個線上論壇，你看到了一篇名為《比特幣：一個點對點的電子現金系統》的論文。
             </>
         ),
-        image: './images/2009.jpg',
+        image: '/images/2009.jpg',
         decisions: [
             {
                 text: '忽略它，認為這是一個異想天開的理論',
@@ -604,6 +604,7 @@ export const scenarios = [
             },
         ],
     },
+
     // --- 所有最終結局 ---
     { id: '1929-end-A', name: '結局：無法避免的蕭條', intro: '你的決策導致市場恐慌，最終引發銀行擠兌，蕭條提前到來。', image: './images/end1929a.jpg', },
     { id: '1929-end-B', name: '結局：回到原點，重蹈覆轍', intro: '你的樂觀態度，與真實的經濟數據脫節。你無法避免這場悲劇。', image: './images/end1929b.jpg', },
