@@ -6,7 +6,9 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 import Home from "./pages/Home"
-import Test from "./pages/Test"
+// import Test from "./pages/Test"
+import Test2 from './pages/Test02'
+
 import YearCount from './components/YearCount'
 import Fate from './components/Fate'
 import Lists from './pages/Lists'
@@ -37,11 +39,12 @@ const MyApp = () => {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/lists' element={<Lists />}></Route>
-        <Route path='/test' element={<Test />}></Route>
+        {/* <Route path='/test' element={<Test />}></Route> */}
+        <Route path='/test2' element={<Test2 />}></Route>
         <Route path='/yearcount' element={<YearCount />}></Route>
         <Route path='/swiper' element={<Swiper />}></Route>
         <Route path='/fate' element={<Fate />}></Route>
-        <Route path="/topic/:id" element={<Test />} />
+        <Route path="/topic/:id" element={<Test2 />} />
 
         <Route path='/event1636' element={<Event1636 />}></Route>
         <Route path='/event1719' element={<Event1719 />}></Route>
