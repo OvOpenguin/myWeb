@@ -131,7 +131,7 @@ section {
 // 首頁banner
 #banner {
     height: 100vh;
-    background-image: url(./hero-bg.jpg);
+    background-image: url(/hero-bg.jpg);
     background-size: cover; //cover滿版剪裁
     background-position: center; //bg cover最好搭配 background-position: center
     background-attachment: fixed; //固定背景語法
@@ -160,7 +160,7 @@ section {
 // 首頁初始選擇區
 #select {
     height: 100vh;
-    background: url(./home-select.jpg);
+    background: url(/home-select.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -184,7 +184,7 @@ section {
     position: relative;
     height: auto;
     padding: 100px 0 150px 0;
-    background: url(./hero-bg.jpg);
+    background: url(/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -348,7 +348,7 @@ section {
 // 隨機選擇區
 #random {
     height: 100vh;
-    background: url(./home-select.jpg);
+    background: url(/home-select.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
