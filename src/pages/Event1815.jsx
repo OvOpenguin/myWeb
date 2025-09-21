@@ -87,7 +87,7 @@ const Events = () => {
 
                 <div className="flow">
                     <div className='bird'>
-                        <img style={getParallaxStyle(1, 250, 0.8, 235)} src="./1815滑鐵盧密報/鴿子.png" alt="鬱金香" />
+                        <img style={getParallaxStyle(1, 250, 0.8, 235)} src="./e1815/pigeon.png" alt="鬱金香" />
                     </div>
                     {
                         cardDetail.map((cardData, index) => (
@@ -97,7 +97,7 @@ const Events = () => {
 
                 </div>
 
-                <div className='badge'><img style={getParallaxStyle(-0.3, 0)} src="./1815滑鐵盧密報/羅斯柴爾德_徽章.png" alt="徽章" /></div>
+                <div className='badge'><img style={getParallaxStyle(-0.3, 0)} src="./e1815/badge.png" alt="徽章" /></div>
             </section>
 
 

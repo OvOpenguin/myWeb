@@ -8,7 +8,7 @@ export const allEventsCards = {
             heading: '事件背景',
             content: (
                 <>
-                    <img src="./鬱金香泡沫/paint06.jpg" alt="鬱金香" className='tulipa' />
+                    <img src="./e1636/paint06.jpg" alt="鬱金香" className='tulipa' />
                     發生在17世紀荷蘭的黃金時代。
                     <br />這場狂熱的起源是鬱金香。
                     <br />鬱金香原本是一種從土耳其傳入的異國花卉，在荷蘭迅速成為社會地位和財富的象徵。
@@ -43,7 +43,7 @@ export const allEventsCards = {
                     <br />這種「只賠定金、不限獲利」的設計，讓全民瘋狂押注，成為早期期權交易的雛形。
                     <br />最終泡沫破裂，政府介入，宣布所有合約只需支付3.5%即可解約，等於官方「割韭菜」止血。
                     <br />鬱金香狂熱的破滅，被視為一個經典的投機泡沫案例。
-                    <img src="./鬱金香泡沫/paint03.jpg" alt="鬱金香" className='tulipa2' />
+                    <img src="./e1636/paint03.jpg" alt="鬱金香" className='tulipa2' />
                 </>
             ),
         },
@@ -68,7 +68,7 @@ export const allEventsCards = {
             heading: '黃金之地的幻想',
             content: (
                 <>
-                    <img src="./密西西比泡沫/boat.svg" alt="boat" className='boat' />
+                    <img src="./e1719/boat.svg" alt="boat" className='boat' />
                     1716年：勞獲准成立「通用銀行」，發行紙幣並允許用來繳稅，建立信用基礎。
                     <br />1717年：勞收購「密西西比公司」，獲得路易斯安那貿易壟斷權，目的是讓公司成為「國家級企業」，吸引資金並償還國債。
                     <br />法國政府與公司大肆宣傳：路易斯安那擁有豐富的金礦、銀礦、香料與肥沃土地，只要投資公司，就能參與開發新世界，甚至移民定居。

@@ -69,7 +69,7 @@ const Lists = () => {
                     <div className="etitle"><h2 className="t1">16xx</h2></div>
 
                     <div className="ecard" >
-                        <div className='img1' >< img style={getParallaxStyle(-0.4, 1000, 0, 0)} src="./鬱金香泡沫/paint04-lg.png" alt="鬱金香" /></div>
+                        <div className='img1' >< img style={getParallaxStyle(-0.4, 1000, 0, 0)} src="./e1636/paint04-lg.png" alt="鬱金香" /></div>
                         <div className='elink'>
                             <h3 >1636</h3>
                             <Link to="/event1636">
@@ -91,7 +91,7 @@ const Lists = () => {
 
                     <div className="etitle"><h2 className="t2">17xx</h2></div>
                     <div className="ecard">
-                        <div className='img2' >< img style={getParallaxStyle(-0.5, 1500, -0.1, 1500)} src="./密西西比泡沫/約翰勞.jpg" alt="約翰勞" /></div>
+                        <div className='img2' >< img style={getParallaxStyle(-0.5, 1500, -0.1, 1500)} src="./e1719/John.jpg" alt="約翰勞" /></div>
                         <div className='elink'>
                             <h3>1720</h3>
                             <Link to="/event1719">
@@ -110,7 +110,7 @@ const Lists = () => {
                     </div>
 
                     <div className="ecard">
-                        <div className='img3' >< img style={getParallaxStyle(0.2, 1500, 0.5, 1500)} src="./南海泡沫/牛頓.webp" alt="牛頓" /></div>
+                        <div className='img3' >< img style={getParallaxStyle(0.2, 1500, 0.5, 1500)} src="./e1720/Newton.webp" alt="牛頓" /></div>
                         <div className='elink'>
                             <h3>1720</h3>
                             <Link to="/event1720">
@@ -135,7 +135,7 @@ const Lists = () => {
                     <div className="etitle"><h2 className="t1">18xx</h2></div>
 
                     <div className="ecard">
-                        <div className='img5' >< img style={getParallaxStyle(1, 2450, 0.8, 2000,)} src="./1815滑鐵盧密報/鴿子.png" alt="鴿子" /></div>
+                        <div className='img5' >< img style={getParallaxStyle(1, 2450, 0.8, 2000,)} src="./e1815/pigeon.png" alt="鴿子" /></div>
                         <div className='elink'>
                             <h3>1815</h3>
                             <Link to="/event1815">
@@ -157,7 +157,7 @@ const Lists = () => {
                         </div>
                     </div>
                     <div className="ecard">
-                        <div className='img6' >< img style={getParallaxStyle(0.8, 2200, 0, 0)} src="./綠背券/GB-10-sm.jpg" alt="綠背券" /></div>
+                        <div className='img6' >< img style={getParallaxStyle(0.8, 2200, 0, 0)} src="./e1864/GB-10-sm.jpg" alt="綠背券" /></div>
                         <div className='elink'>
                             <h3>1864</h3>
                             <Link to="/event1864">
@@ -187,7 +187,7 @@ const Lists = () => {
                     <div className="etitle"><h2 className="t2">19xx</h2></div>
 
                     <div className="ecard">
-                        <div className='img7' >< img style={getParallaxStyle(1.2, 3000, 0, 0)} src="./1929經濟大蕭條/跌落.png" alt="跌落" /></div>
+                        <div className='img7' >< img style={getParallaxStyle(1.2, 3000, 0, 0)} src="./e1929/people.png" alt="跌落" /></div>
                         <div className='elink'>
                             <h3>1929</h3>
                             <Link to="/event1929">
@@ -246,7 +246,7 @@ const Lists = () => {
 
                     <div className="etitle"><h2 className="t1">20xx</h2></div>
                     <div className="ecard">
-                        <div className='img8' >< img style={getParallaxStyle(0.7, 3900, 0, 0)} src="./2008金融海嘯/手向下.png" alt="跌落" /></div>
+                        <div className='img8' >< img style={getParallaxStyle(0.7, 3900, 0, 0)} src="./e2008/hand-down.png" alt="跌落" /></div>
                         <div className='elink'>
                             <h3>2008</h3>
                             <Link to="/event2008">
@@ -269,7 +269,7 @@ const Lists = () => {
                     </div>
 
                     <div className="ecard">
-                        <div className='img10' >< img style={getParallaxStyle(0.1, 4200, 0.5, 4100)} src="./比特幣崛起/b1-sm.png" alt="bitcoin" /></div>
+                        <div className='img10' >< img style={getParallaxStyle(0.1, 4200, 0.5, 4100)} src="./e2009/b1-sm.png" alt="bitcoin" /></div>
                         <div className='elink'>
                             <h3>2009</h3>
                             <Link to="/event2009">

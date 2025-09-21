@@ -52,7 +52,7 @@ const Home = () => {
                                 </p>
                             </div>
                             {/* 附圖 */}
-                            <figure><img src="./鬱金香泡沫/paint01.jpg" alt="鬱金香泡沫" /></figure>
+                            <figure><img src="./e1636/paint01.jpg" alt="鬱金香泡沫" /></figure>
 
                         </div>
                     </article>
@@ -77,7 +77,7 @@ const Home = () => {
                                 </p>
                             </div>
                             {/* 附圖 */}
-                            <figure className="ro"><img src="./南海泡沫/南海泡沫.jpg" alt="南海泡沫" /></figure>
+                            <figure className="ro"><img src="./e1720/banner_1.jpg" alt="南海泡沫" /></figure>
 
                         </div>
                     </article>
@@ -104,7 +104,7 @@ const Home = () => {
                                         <br />當貪婪的警鐘響起，震撼全球的「大蕭條序章」正式拉開帷幕。</p>
                                 </div>
                                 {/* 附圖 */}
-                                <figure><img src="./1929經濟大蕭條/經濟大蕭條_banner1.jpg" alt="經濟大蕭條" /></figure>
+                                <figure><img src="./e1929/banner2.jpg" alt="經濟大蕭條" /></figure>
 
                             </div>
                             <div className="card-r">
@@ -121,7 +121,7 @@ const Home = () => {
                                     </p>
                                 </div>
                                 {/* 附圖 */}
-                                <figure className="ro"><img src="./1998索羅斯狙擊/索羅斯.jpg" alt="索羅斯" /></figure>
+                                <figure className="ro"><img src="./e1998/Soros.jpg" alt="索羅斯" /></figure>
 
                             </div>
                         </div>
