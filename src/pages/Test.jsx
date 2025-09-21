@@ -121,7 +121,7 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
                     </div>
                     <div className='again'>
                         <button className="check" onClick={onRestart}>
-                            🔄 重新選擇
+                            重新選擇
                         </button>
                     </div>
 
@@ -139,7 +139,7 @@ function ScenarioManager() {
     const navigate = useNavigate();
 
     // 找出所有「起點」場景
-    const startScenarios = scenarios.filter(s => s.id === '1929' || s.id === '1720' || s.id === '1636' || s.id === '2009');
+    const startScenarios = scenarios.filter(s => s.isStart);
 
     const [decisionPath, setDecisionPath] = useState([]);  //決策路徑
 
