@@ -56,7 +56,7 @@ function RandomTopicSelector() {
                 }}
             >
                 {/* 只有在有圖片資料時才渲染 img 標籤 */}
-                {currentScenario && (
+                {currentScenario?.image && (
                     <img
                         src={currentScenario.image}
                         alt={currentScenario.name}

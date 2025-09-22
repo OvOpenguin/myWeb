@@ -1,3 +1,10 @@
+import tv1 from "../images/e1636-TV1.jpg"
+import tv2 from "../images/e1720-TV2.jpg"
+import tv3 from "../images/e1929-TV3.jpg"
+import tv4 from "../images/e2008-TV4.avif"
+import tv5 from "../images/e2009-TV5.webp"
+
+
 
 export const scenarios = [
     // --- 1636年鬱金香泡沫情境 ---
@@ -14,7 +21,7 @@ export const scenarios = [
                 <br /><strong>你的任務： 在這場前所未有的泡沫中，你必須利用你的商業嗅覺，做出正確的決策。</strong>
             </>
         ),
-        image: process.env.PUBLIC_URL + '/e1636/paint03.jpg',
+        image: tv1,
         decisions: [
             {
                 text: '立即投入所有資金，瘋狂囤積稀有品種',
@@ -82,7 +89,7 @@ export const scenarios = [
                 <br />你還意外得知約翰·勞與攝政王奧爾良公爵菲利普二世之間的驚天密謀……
             </>
         ),
-        image: process.env.PUBLIC_URL + '/e1720/banner_1.jpg',
+        image: tv2,
         decisions: [
             {
                 text: '立即拋售所有股票，並將資產轉移至國外',
@@ -167,8 +174,6 @@ export const scenarios = [
         ],
     },
 
-
-
     // --- 1929年美國經濟部長情境 ---
     {
         id: '1929',
@@ -179,7 +184,7 @@ export const scenarios = [
                 時間：1929年9月，你剛上任美國經濟部長。面對股市狂飆與信貸膨脹，你會怎麼做？
             </>
         ),
-        image: process.env.PUBLIC_URL + '/e1929/banner1.jpg',
+        image: tv3,
         decisions: [
             {
                 text: '向大眾公開警告風險',
@@ -205,7 +210,6 @@ export const scenarios = [
         id: '1929-q2',
         name: '後果蔓延：無法阻止的恐慌',
         intro: '你的私下干預在「黑色星期四」當天暫時奏效，但市場的恐慌情緒在接下來的幾天內迅速蔓延，銀行間的信任開始瓦解。',
-        image: './images/1929-q2.jpg',
         decisions: [
             {
                 text: '立即動用聯邦儲備系統（Fed）的力量',
@@ -221,6 +225,7 @@ export const scenarios = [
             },
         ],
     },
+
     // 2008年金融海嘯
     {
         id: '2008',
@@ -233,7 +238,7 @@ export const scenarios = [
                 你的上司剛打電話給你，語氣謹慎地暗示：「這家公司的規模太大，牽一髮而動全身...這起訴訟，也許沒有那麼簡單。」
             </>
         ),
-        image: process.env.PUBLIC_URL + '/e2008/banner-01.avif',
+        image: tv4,
         decisions: [
             {
                 text: '立即將硬碟提交給聯邦調查局（FBI）',
@@ -274,6 +279,7 @@ export const scenarios = [
             },
         ],
     },
+
     // --- 2009年比特幣情境 ---
     {
         id: '2009',
@@ -284,7 +290,7 @@ export const scenarios = [
                 你是在2008年金融風暴中失業的普通人。在一個線上論壇，你看到了一篇名為《比特幣：一個點對點的電子現金系統》的論文。
             </>
         ),
-        image: process.env.PUBLIC_URL + '/e2009/Satoshi.webp',
+        image: tv5,
         decisions: [
             {
                 text: '忽略它，認為這是一個異想天開的理論',
@@ -349,7 +355,6 @@ export const scenarios = [
                 <br /> 雖然在國內的莊園被沒收，但你的財富毫髮無損，你保全了自己與家族的財富，但卻無法改變歷史。
                 <br /> 法國的經濟遭受到毀滅性的打擊，國家陷入多年蕭條，而你終將成為一名身處亂世的局外人。
             </>),
-        image: './images/end1720a.jpg',
     },
     {
         id: '1720-end-A-B',
