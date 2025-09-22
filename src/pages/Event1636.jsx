@@ -74,7 +74,7 @@ const Events = () => {
   return (
     <>
       {/* 標題區 */}
-      <section id="eventTitle">
+      <section className="eventTitle">
         <div className="ehead">
           <h2>16</h2>
           <h3>36 鬱金香狂熱</h3>
@@ -83,7 +83,7 @@ const Events = () => {
 
 
       {/* 內文區 */}
-      <section id="eventContent">
+      <section className="eventContent">
         {/* faq box */}
 
         <div className="tip-box">
@@ -92,7 +92,7 @@ const Events = () => {
 
         <div className="flow">
           <div className='fimg'>
-            <img style={getParallaxStyle(-1.1, 250, 0, 0)} src="./e1636/paint04-lg.png" alt="鬱金香" />
+            <img style={getParallaxStyle(-0.9, 250, 0, 0)} src="./e1636/paint04-lg.png" alt="鬱金香" />
           </div>
 
           {
@@ -106,7 +106,7 @@ const Events = () => {
 
 
       {/* 總結區 */}
-      <section id="eventResult">
+      <section className="eventResult">
         <div className="eCard">
           <h4>事件總結</h4>
           <p>當人們的投機心理脫離資產的實際價值時，會引發多麼巨大的風險。

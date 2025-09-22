@@ -35,7 +35,7 @@ const Nav = () => {
                 <ul className="menu">
                     <li><Link to="/">回到現在</Link></li>
                     <li><Link to="/lists">情報列表</Link></li>
-                    <li><Link to="/yearcount">時空倒數</Link></li>
+                    {/* <li><Link to="/yearcount">時空倒數</Link></li> */}
                     <li><Link to="/test">歷史決策</Link></li>
                 </ul>
             </nav>

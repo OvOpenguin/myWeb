@@ -12,12 +12,13 @@ const Home = () => {
         <>
             <main>
                 {/* hero區: 搭配數字+事件切換 */}
-                <section id="banner">
+                {/* <section id="banner">
                     <div className="title"><h1>2025</h1></div>
                     <div className="event">
                         <h4>中美貿易戰</h4>
                     </div>
-                </section>
+                </section> */}
+                <YearCounter/>
 
                 {/* 初始選擇區 */}
                 <section id="select">

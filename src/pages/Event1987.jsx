@@ -46,7 +46,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>19</h2>
                     <h3>87　無人止跌</h3>
@@ -54,7 +54,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -73,7 +73,7 @@ const Events = () => {
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>1987年「黑色星期一」揭示了金融市場的脆弱本質——當程式交易失控、恐慌情緒蔓延、監管機制滯後，市場不再由人性主導，而是被演算法推向深淵。

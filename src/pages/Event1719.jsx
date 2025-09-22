@@ -80,7 +80,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>17</h2>
                     <h3>20　密西西比泡沫</h3>
@@ -88,7 +88,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -115,7 +115,7 @@ const Events = () => {
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>約翰·勞的設計初衷是好的：用紙幣與股票制度解決國債、刺激經濟。

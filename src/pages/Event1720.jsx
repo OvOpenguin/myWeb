@@ -77,7 +77,7 @@ const Events = () => {
   return (
     <>
       {/* 標題區 */}
-      <section id="eventTitle">
+      <section className="eventTitle">
         <div className="ehead">
           <h2>17</h2>
           <h3>20　南海泡沫</h3>
@@ -85,7 +85,7 @@ const Events = () => {
       </section>
 
       {/* 內文區 */}
-      <section id="eventContent">
+      <section className="eventContent">
         {/* faq box */}
         <div className="tip-box">
           <Faq items={faqItems} />
@@ -119,7 +119,7 @@ const Events = () => {
 
 
       {/* 總結區 */}
-      <section id="eventResult" >
+      <section className="eventResult" >
         <div className="eCard">
           <h4>事件總結</h4>
           <p>政府債務 →金融創新：南海公司本質是政府融資工具，非真正貿易公司。

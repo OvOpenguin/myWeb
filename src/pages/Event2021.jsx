@@ -42,7 +42,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>20</h2>
                     <h3>21　GameStop 史詩級軋空</h3>
@@ -50,7 +50,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -69,7 +69,7 @@ const Events = () => {
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>GameStop 軋空事件不只是一次金融市場的異常波動，更是一場由散戶集體意識驅動的社會現象。

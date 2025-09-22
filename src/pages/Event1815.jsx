@@ -71,7 +71,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>18</h2>
                     <h3>15　滑鐵盧密報</h3>
@@ -79,7 +79,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent ec1815">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -87,7 +87,7 @@ const Events = () => {
 
                 <div className="flow">
                     <div className='bird'>
-                        <img style={getParallaxStyle(1, 250, 0.8, 235)} src="./e1815/pigeon.png" alt="鬱金香" />
+                        <img style={getParallaxStyle(0.8, 0, 0, 0)} src="./e1815/pigeon.png" alt="鬱金香" />
                     </div>
                     {
                         cardDetail.map((cardData, index) => (
@@ -97,13 +97,13 @@ const Events = () => {
 
                 </div>
 
-                <div className='badge'><img style={getParallaxStyle(-0.3, 0)} src="./e1815/badge.png" alt="徽章" /></div>
+                <div className='badge'><img style={getParallaxStyle(-0.5, 0)} src="./e1815/badge.png" alt="徽章" /></div>
             </section>
 
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>1815年，納坦·羅斯柴爾德在滑鐵盧戰役後，憑藉家族情報網搶先掌握戰果，透過假性拋售引發市場恐慌，再低價掃貨英國公債，成功套利，堪稱金融史上的經典操作。

@@ -66,7 +66,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>18</h2>
                     <h3>64　綠背風雲</h3>
@@ -74,7 +74,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -93,7 +93,7 @@ const Events = () => {
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>在南北戰爭的財政絕境中，林肯選擇不向銀行屈服，而是由政府親自發行綠背券，一種無息、無金屬儲備的紙幣，撐起整場戰爭的經濟命脈。

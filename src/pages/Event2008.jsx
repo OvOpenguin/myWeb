@@ -62,7 +62,7 @@ const Events = () => {
     return (
         <>
             {/* 標題區 */}
-            <section id="eventTitle">
+            <section className="eventTitle">
                 <div className="ehead">
                     <h2>20</h2>
                     <h3>08　金融海嘯</h3>
@@ -70,7 +70,7 @@ const Events = () => {
             </section>
 
             {/* 內文區 */}
-            <section id="eventContent">
+            <section className="eventContent">
                 {/* faq box */}
                 <div className="tip-box">
                     <Faq items={faqItems} />
@@ -89,7 +89,7 @@ const Events = () => {
 
 
             {/* 總結區 */}
-            <section id="eventResult" >
+            <section className="eventResult" >
                 <div className="eCard">
                     <h4>事件總結</h4>
                     <p>2008年，一場由次級房貸引爆的金融骨牌效應，讓雷曼兄弟倒下、AIG求援，全球市場陷入恐慌。
