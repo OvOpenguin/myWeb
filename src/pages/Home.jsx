@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 import YearCounter from "../components/YearCount";
 import Fate from "../components/Fate";
@@ -7,22 +8,46 @@ import BackBtnWhite from '../components/BackBtnWhite';
 
 import "../sass/home.scss";
 
+
 const Home = () => {
+
+    const titleRef = useRef(null);
+
+    useEffect(() => {
+        const titleEl = titleRef.current;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // 先移除再加，確保動畫可以重新播放
+                    titleEl.classList.remove("active");
+                    void titleEl.offsetWidth; // 觸發 reflow
+                    titleEl.classList.add("active");
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (titleEl) observer.observe(titleEl);
+
+        return () => observer.disconnect();
+    }, []);
+
+
+
     return (
         <>
             <main>
                 {/* hero區: 搭配數字+事件切換 */}
-                {/* <section id="banner">
-                    <div className="title"><h1>2025</h1></div>
-                    <div className="event">
-                        <h4>中美貿易戰</h4>
-                    </div>
-                </section> */}
-                <YearCounter/>
+                <YearCounter />
 
                 {/* 初始選擇區 */}
                 <section id="select">
-                    <div className="title"><h4>如果歷史可以重來，你會怎麼做？</h4></div>
+                    <div className="title" ref={titleRef}>
+                        <h4>如果歷史可以重來，你會怎麼做？</h4>
+                        <div className="spot"></div>
+                    </div>
+
                     <div className="btnbox">
                         <Link to="/test"><button className="btnHome">直接挑戰</button></Link>
                         <Link to="/lists"><button className="btnHome btnlist">蒐集情報</button></Link>

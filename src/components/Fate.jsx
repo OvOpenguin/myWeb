@@ -7,7 +7,7 @@ import "../sass/home.scss";
 
 const initialScenarios = scenarios.filter(scenario => !scenario.id.includes('-'));
 
-function RandomTopicSelector() {
+function RandomTopicSelector({ titleRef }) {
     // 將初始狀態設為 null
     const [currentScenario, setCurrentScenario] = useState(null);
     const [isSelecting, setIsSelecting] = useState(false);
@@ -46,7 +46,7 @@ function RandomTopicSelector() {
     return (
 
         <section id='random'>
-            <div className="title"><h4>不知道去哪？隨機回溯時空，改寫歷史。</h4></div>
+            <div className="title" ref={titleRef}><h4>不知道去哪？隨機回溯時空，改寫歷史。</h4></div>
             {/* <h4>{isSelecting ? '正在選題中...' : '隨機選題'}</h4> */}
 
 

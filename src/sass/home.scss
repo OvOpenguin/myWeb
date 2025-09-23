@@ -35,10 +35,14 @@ section {
     // 透明背景共用
     @include opbg;
 
-    h1 {
+    h1,
+    h4 {
         font-family: ToronoGlitchSerif-2;
     }
+
+
 }
+
 
 // 第一個按鈕樣式(亮色)
 .btnBack {
@@ -155,10 +159,83 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
+
+    .title {
+        position: relative;
+
+        &.active .spot {
+            animation: spotlight 3s ease-in-out forwards;
+        }
+
+        @keyframes spotlight {
+            0% {
+                left: -100%;
+            }
+
+            40% {
+                left: 35%;
+            }
+
+            60% {
+                left: 35%;
+            }
+
+            100% {
+                left: 120%;
+            }
+        }
+
+        .spot {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: -100%;
+            width: 10%;
+            height: 100%;
+            background: $b3;
+            filter: blur(100px);
+            opacity: 0.7;
+        }
+    }
 
 
     h4 {
         padding: 30px 0;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            transform: skewX(-10deg);
+        }
+
+        // 特殊掃描效果
+        &::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background: linear-gradient(to bottom,
+                    transparent 0%,
+                    rgba(255, 255, 255, 0.2) 50%,
+                    transparent 100%);
+            opacity: 0;
+        }
+        &:hover::before {
+            opacity: 1;
+            animation: scan 2s linear infinite;
+        }
+        @keyframes scan {
+            0% {
+                top: -100%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
     }
 
     .btnbox {
@@ -346,6 +423,7 @@ section {
     background-position: center;
     background-attachment: fixed;
 
+
     h4 {
         padding: 30px 0;
     }
@@ -372,6 +450,20 @@ section {
         color: $y1;
         font-size: 1.5rem;
         font-weight: 600;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            text-shadow: 0 0 5px rgba($b1, 0.8), 0 0 10px rgba($b1, 0.8);
+            transform: scale(0.97);
+        }
+
+        &:active {
+            text-shadow: 0 0 5px rgba($b1, 0.8), 0 0 10px rgba($b1, 0.8);
+            transform: scale(0.97);
+        }
+
+
     }
 
     .result {

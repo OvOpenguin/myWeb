@@ -8,22 +8,72 @@
 // }
 
 // btn設定待更新
+// .check {
+//     transition: all 0.35s ease;
+//     font-size: 1.25rem;
+//     border-radius: 8px;
+//     padding: 8px 16px;
+//     background-color: $b1;
+//     color: $b3;
+
+//     &:hover {
+//         filter: grayscale(40%) brightness(1.2);
+//     }
+
+//     &:active {
+//         filter: grayscale(40%) brightness(1.2);
+//     }
+
+// }
+
 .check {
-    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
     font-size: 1.25rem;
     border-radius: 8px;
     padding: 8px 16px;
-    background-color: $b1;
+    background-color: $b1-80;
     color: $b3;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    z-index: 0;
 
-    &:hover {
-        filter: grayscale(40%) brightness(1.2);
+    // 掃描線（預設隱藏）
+    &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        background: linear-gradient(to bottom,
+                transparent 0%,
+                rgba(255, 255, 255, 0.15) 50%,
+                transparent 100%);
+        opacity: 0;
+        z-index: 1;
+        pointer-events: none;
     }
 
-    &:active {
-        filter: grayscale(40%) brightness(1.2);
+    &:hover::before {
+        opacity: 0.8;
+        animation: scan 2s linear infinite;
+    }
+
+}
+
+@keyframes scan {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
     }
 }
+
+
+
 
 
 // 共通設定
