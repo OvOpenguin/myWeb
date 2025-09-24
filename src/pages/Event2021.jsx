@@ -45,7 +45,7 @@ const Events = () => {
             <section className="eventTitle">
                 <div className="ehead">
                     <h2>20</h2>
-                    <h3>21　GameStop 史詩級軋空</h3>
+                    <h3>21　GME史詩級軋空</h3>
                 </div>
             </section>
 

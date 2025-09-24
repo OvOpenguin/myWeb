@@ -3,7 +3,9 @@
 @use './function' as *;
 @use './keyframe';
 
-
+*{
+    outline: 1px red solid;
+}
 // 標題區
 .eventTitle {
     background: #000;

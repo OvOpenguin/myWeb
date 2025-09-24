@@ -72,7 +72,7 @@ const Events = () => {
             <section className="eventTitle">
                 <div className="ehead">
                     <h2>20</h2>
-                    <h3>09　比特幣(Bitcoin)崛起</h3>
+                    <h3>09　比特幣崛起</h3>
                 </div>
             </section>
 
