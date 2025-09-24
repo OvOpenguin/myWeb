@@ -104,7 +104,7 @@ const Events = () => {
                 </div>
                 {/* 視差圖片區 */}
                 <div className="ticket">
-                    <img style={getParallaxStyle(0.8, 0, -0.3, 100)} src="./e1719/paper-sm.png" alt="1720紙票" />
+                    <img style={getParallaxStyle(0.8, 0, -0.3, 10)} src="./e1719/paper-sm.png" alt="1720紙票" />
                 </div>
 
                 <div className='john'>

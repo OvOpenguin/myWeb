@@ -156,7 +156,7 @@ const Home = () => {
                     </article>
 
                     {/* 按鈕 */}
-                    <Link to="/lists"> <button className="btnHome btnMore">更多情報</button></Link>
+                    <Link to="/lists"><button className="btnHome btnMore">更多情報</button></Link>
 
                 </section>
 

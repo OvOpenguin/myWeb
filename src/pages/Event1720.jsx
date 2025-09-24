@@ -80,7 +80,7 @@ const Events = () => {
       <section className="eventTitle">
         <div className="ehead">
           <h2>17</h2>
-          <h3>20　南海泡沫</h3>
+          <h3>20 南海泡沫</h3>
         </div>
       </section>
 

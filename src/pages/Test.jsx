@@ -228,7 +228,7 @@ function ScenarioManager() {
                     🎲 隨機跳轉時空
                 </button>
                 <button className="check" onClick={handleNextChapter}>
-                    ⏭️ 回溯下一個時空
+                    回溯下一個時空
                 </button>
             </section>
         </main>

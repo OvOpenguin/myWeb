@@ -77,7 +77,7 @@ export default function YearCounter() {
         >
             {/* 年份 */}
             <div className="count" ref={nodeRef}>
-                {startYear}
+                <h1>{startYear}</h1>
             </div>
 
             {/* 事件文字 */}

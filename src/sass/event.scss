@@ -3,9 +3,10 @@
 @use './function' as *;
 @use './keyframe';
 
-*{
-    outline: 1px red solid;
-}
+// *{
+//     outline: 1px red solid;
+// }
+
 // 標題區
 .eventTitle {
     background: #000;
@@ -16,6 +17,7 @@
         width: 80%;
         display: flex;
         align-items: center;
+        font-family: ToronoGlitchSerif-2;
 
         h2 {
             padding-right: 25px;
@@ -211,7 +213,9 @@
 // 特效區
 .eventContent {
 
-
+    @media (max-width:500px) {
+        overflow: hidden;
+    }
     // 鬱金香
     .tulipa {
         width: 200px;
@@ -240,7 +244,7 @@
         position: absolute;
         top: 10px;
         right: 10%;
-        width: 400px;
+        width: 350px;
     }
 
     .newton {

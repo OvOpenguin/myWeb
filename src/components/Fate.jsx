@@ -46,10 +46,9 @@ function RandomTopicSelector({ titleRef }) {
     return (
 
         <section id='random'>
-            <div className="title" ref={titleRef}><h4>不知道去哪？隨機回溯時空，改寫歷史。</h4></div>
-            {/* <h4>{isSelecting ? '正在選題中...' : '隨機選題'}</h4> */}
-
-
+            <div className="title">
+                <h4>不知道去哪？隨機回溯時空，改寫歷史。</h4>
+            </div>
             <div className='tv'
                 style={{
                     backgroundColor: currentScenario ? 'transparent' : 'black',
@@ -92,6 +91,8 @@ function RandomTopicSelector({ titleRef }) {
             <p className='specific'>
                 {isSelecting ? '回溯中...' : null}
             </p>
+
+
 
 
         </section>

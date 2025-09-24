@@ -23,10 +23,10 @@ const Faq = ({ items = [] }) => {
                 <ul className="tip">
                     {items.map((item, index) => (
                         <li key={index}>
-                            <h3 className="tipTitle">
+                            <h5 className="tipTitle">
                                 {item.question}
                                 <div className="plus-minus-toggle collapsed"></div>
-                            </h3>
+                            </h5>
                             <div className="tipAnswer">{item.answer}</div>
                         </li>
                     ))}
