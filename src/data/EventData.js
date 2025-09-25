@@ -9,7 +9,7 @@ export const EventData = [
     id:2,
     year: 1719,
     name: "密西西比泡沫",
-    bg: "./e1719/Louis.jpg"
+    bg: "./e1719/Louis2.jpg"
   },
   {
     id:3,
@@ -21,7 +21,7 @@ export const EventData = [
     id:4,
     year: 1815,
     name: "滑鐵盧密報",
-    bg: "./e1815/banner-1.png"
+    bg: "./e1815/banner-1.jpg"
   },
   {
     id:5,
