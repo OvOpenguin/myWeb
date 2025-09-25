@@ -130,7 +130,7 @@ const Home = () => {
                                         <br />當貪婪的警鐘響起，震撼全球的「大蕭條序章」正式拉開帷幕。</p>
                                 </div>
                                 {/* 附圖 */}
-                                <figure><img src="./e1929/banner2.jpg" alt="經濟大蕭條" /></figure>
+                                <figure><img src="./e1929/p1929.jpg" alt="經濟大蕭條" /></figure>
 
                             </div>
                             <div className="card-r">
