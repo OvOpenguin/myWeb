@@ -62,7 +62,7 @@ export const EventData = [
   {
     id:11,
     year: 2021,
-    name: "GameStop史詩級軋空",
+    name: "GME史詩級軋空",
     bg: "./e2021/banner-01.webp"
   },
   {
