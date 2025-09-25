@@ -4,26 +4,7 @@
 @use './keyframe';
 
 // * {
-//     outline: red 1px solid;
-// }
-
-// btn設定待更新
-// .check {
-//     transition: all 0.35s ease;
-//     font-size: 1.25rem;
-//     border-radius: 8px;
-//     padding: 8px 16px;
-//     background-color: $b1;
-//     color: $b3;
-
-//     &:hover {
-//         filter: grayscale(40%) brightness(1.2);
-//     }
-
-//     &:active {
-//         filter: grayscale(40%) brightness(1.2);
-//     }
-
+//     outline: 1px red solid;
 // }
 
 .check {
@@ -124,7 +105,7 @@
         padding: 40px;
         border-radius: 16px;
         background: rgba(0, 0, 0, 0.80);
-        min-width: 400px;
+        min-width: 350px;
 
         p {
             text-align: left;
@@ -135,7 +116,7 @@
     // 選擇題區
     .test-other {
         width: 60%;
-        min-width: 400px;
+        min-width: 350px;
 
         .cross {
             margin-top: 30px;
@@ -207,7 +188,7 @@
     .decision-history {
         width: 60%;
         margin-top: 50px;
-        min-width: 400px;
+        min-width: 350px;
         background: $b1-80;
         border-radius: 16px;
         padding: 40px;
@@ -270,7 +251,7 @@
     // 最終結局
     .final-result {
         width: 60%;
-        min-width: 400px;
+        min-width: 350px;
         background: $b0-80;
         padding: 40px;
         border-radius: 16px;
@@ -290,6 +271,22 @@
     justify-content: space-between;
     width: 60%;
     margin: 30px auto 0;
-    padding-bottom: 30px;
-    min-width: 400px;
+    padding-bottom: 20px;
+
+
+    @media (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nextsvg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        img {
+            width: 20px;
+        }
+    }
 }

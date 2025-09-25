@@ -127,6 +127,7 @@ section {
     background-position: center; //bg cover最好搭配 background-position: center
     background-attachment: fixed; //固定背景語法
     transition: all 1s ease;
+    background-color: $b1;
 
     // 針對倒數數字額外設定
     .count {
@@ -144,6 +145,7 @@ section {
         h4 {
             font-family: ToronoGlitchSerif-2;
             color: #fff;
+            text-shadow: 0 0 15px $b1, 0 0 30px $b1;
         }
     }
 }
@@ -219,10 +221,12 @@ section {
                     transparent 100%);
             opacity: 0;
         }
+
         &:hover::before {
             opacity: 1;
             animation: scan 2s linear infinite;
         }
+
         @keyframes scan {
             0% {
                 top: -100%;
@@ -248,7 +252,7 @@ section {
     position: relative;
     height: auto;
     padding: 100px 0 150px 0;
-    background: url(/hero-bg.jpg);
+    background: url(/hero-lg.avif);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -446,16 +450,17 @@ section {
         color: $y1;
         font-size: 1.5rem;
         font-weight: 600;
-
         transition: all 0.3s ease;
 
         &:hover {
-            text-shadow: 0 0 5px rgba($b1, 0.8), 0 0 10px rgba($b1, 0.8);
+            color: $b3;
+            text-shadow: 0 0 5px rgba($p1, 0.8), 0 0 10px rgba($p1, 0.8);
             transform: scale(0.97);
         }
 
         &:active {
-            text-shadow: 0 0 5px rgba($b1, 0.8), 0 0 10px rgba($b1, 0.8);
+            color: $b3;
+            text-shadow: 0 0 5px rgba($p1, 0.8), 0 0 10px rgba($p1, 0.8);
             transform: scale(0.97);
         }
 

@@ -9,7 +9,7 @@ import "../sass/home.scss";
 export default function YearCounter() {
     const [year, setYear] = useState(1636);
     const [eventText, setEventText] = useState("");
-    const [bgImage, setBgImage] = useState("./hero-bg.jpg");
+    const [bgImage, setBgImage] = useState("./hero-lg.avif");
     const nodeRef = useRef(null);
 
     const startYear = 1600;

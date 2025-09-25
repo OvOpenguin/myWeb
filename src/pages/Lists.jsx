@@ -69,7 +69,7 @@ const Lists = () => {
                     <div className="etitle"><h2 className="t1">16xx</h2></div>
 
                     <div className="ecard" >
-                        <div className='img1' >< img style={getParallaxStyle(-0.4, 1000, 0, 0)} src="./e1636/paint04-lg.png" alt="鬱金香" /></div>
+                        <div className='img1' >< img style={getParallaxStyle(-0.2, 1000, 0, 0)} src="./e1636/paint04.avif" alt="鬱金香" /></div>
                         <div className='elink'>
                             <h3 >1636</h3>
                             <Link to="/event1636">

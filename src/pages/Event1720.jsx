@@ -94,7 +94,7 @@ const Events = () => {
         <div className="flow">
 
           <div className='bimg'>
-            <img style={getParallaxStyle(-0.8, 0, 0, 0)} src="./e1720/e1720_1.webp" alt="南海泡沫" />
+            <img style={getParallaxStyle(-0.8, 0, 0, 0)} src="./e1720/e1720.jpg" alt="南海泡沫" />
           </div>
           {
             cardDetail.map((cardData, index) => (
@@ -103,7 +103,7 @@ const Events = () => {
           }
         </div>
         <div className='john'>
-          <img style={getParallaxStyle(-0.7, 1000, 0, 0)} src="./e1720/Newton-nobg.png" alt="牛頓" />
+          <img style={getParallaxStyle(-0.7, 1000, 0, 0)} src="./e1720/Newton.webp" alt="牛頓" />
         </div>
 
         {/* 泡泡區 */}

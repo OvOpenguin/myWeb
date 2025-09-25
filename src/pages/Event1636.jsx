@@ -92,7 +92,7 @@ const Events = () => {
 
         <div className="flow">
           <div className='fimg'>
-            <img style={getParallaxStyle(-0.9, 250, 0, 0)} src="./e1636/paint04-lg.png" alt="鬱金香" />
+            <img style={getParallaxStyle(-0.9, 150, 0, 0)} src="./e1636/paint04.avif" alt="鬱金香" />
           </div>
 
           {
@@ -101,6 +101,7 @@ const Events = () => {
             ))
           }
         </div>
+
       </section>
 
 

@@ -109,6 +109,14 @@ header {
 
 
 
+
+        }
+        
+        // 紫色hover
+        .selectHis {
+            &:hover {
+                box-shadow: 0 1px 5px $p1;
+            }
         }
     }
 }
@@ -117,11 +125,8 @@ header {
 footer {
     padding: 10px 0;
     text-align: center;
-    color: #fff;
+    color: $b3;
     background: $b1;
     font-size: 0.75rem;
     letter-spacing: 1.2px;
-    small{
-        font-size: 0.5rem;
-    }
 }

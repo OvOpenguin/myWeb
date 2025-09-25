@@ -1,6 +1,8 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 import { scenarios } from '../data/ScenarioData';
 import "../sass/test.scss"
 
@@ -32,9 +34,14 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
         <section className="test">
             {/* 1. 場景標題與內容 - 固定顯示在最上方 */}
             <div className='test-subject'><h3>{data.name}</h3></div>
-            <div className='test-content'>
+            <motion.div
+                className="test-content"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+            >
                 <p className="description-text">{data.intro}</p>
-            </div>
+            </motion.div>
 
             {/* 2. 決策歷程 - 在起點之後才顯示 */}
             {decisionPath.length > 0 && (
@@ -228,7 +235,7 @@ function ScenarioManager() {
                     🎲 隨機跳轉時空
                 </button>
                 <button className="check" onClick={handleNextChapter}>
-                    回溯下一個時空
+                    <div className='nextsvg'><img src="./next.svg" alt="next" />回溯下一個時空</div>
                 </button>
             </section>
         </main>

@@ -103,7 +103,7 @@ const Home = () => {
                                 </p>
                             </div>
                             {/* 附圖 */}
-                            <figure className="ro"><img src="./e1720/banner_1.jpg" alt="南海泡沫" /></figure>
+                            <figure className="ro"><img src="./e1720/p1720.jpg" alt="南海泡沫" /></figure>
 
                         </div>
                     </article>
