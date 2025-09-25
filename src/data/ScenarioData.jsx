@@ -1,8 +1,8 @@
-import tv1 from "../images/e1636-TV1.jpg"
-import tv2 from "../images/e1720-TV2.jpg"
-import tv3 from "../images/e1929-TV3.jpg"
-import tv4 from "../images/e2008-TV4.avif"
-import tv5 from "../images/e2009-TV5.webp"
+import tv1 from "../images/p1636-TV.avif"
+import tv2 from "../images/p1720-TV.jpg"
+import tv3 from "../images/p1929-TV.jpg"
+import tv4 from "../images/p2008-TV.avif"
+import tv5 from "../images/p2009-TV.webp"
 
 
 
