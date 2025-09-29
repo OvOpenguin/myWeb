@@ -16,13 +16,15 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
     // 判斷是否為最終結局
     const isFinalOutcome = !data.decisions || data.decisions.length === 0;
 
+    // 點選「發布決策」時，將決策區塊顯示變為true
     const handleDecision = () => {
         if (selected !== null) setDecisionMade(true);
     };
 
+    // 「繼續前進」或「查看結局」的按鈕 => 回傳 nextId 至主元件
     const handleNext = () => {
         const nextId = data.decisions[selected].nextId;
-        onNext(nextId, selected);
+        onNext(nextId, selected);  // selected 為 decisionIndex 傳至主元件
         setSelected(null);
         setDecisionMade(false);
         setTruthRevealed(false);
@@ -68,7 +70,7 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
                             <div key={index} className='btnBox'>
                                 <button
                                     className={`btnSelect ${selected === index ? 'btnSelectActive' : ''}`}
-                                    onClick={() => setSelected(index)}
+                                    onClick={() => setSelected(index)} //這裡決定支線結局，通過setSelected(index)回傳desicion.index
                                 >
                                     {decision.text}
                                 </button>
@@ -142,63 +144,49 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
 
 // 主邏輯元件
 function ScenarioManager() {
-    const { id } = useParams();
-    const navigate = useNavigate();
-
-    // 找出所有「起點」場景
-    const startScenarios = scenarios.filter(s => s.isStart);
-
+    const { id } = useParams(); //根據網址決定顯示哪個劇情
+    const navigate = useNavigate(); //玩家選了某個選項 → 讀到它的 nextId → navigate("/topic/"+nextId) → React Router 改網址 → useParams 更新 id → useEffect 找到對應劇情 → 畫面更新。
+    const startScenarios = scenarios.filter(s => s.isStart); // 把所有 scenarios 裡標記了 isStart: true 的場景挑出來，作為起始場景集合。
     const [decisionPath, setDecisionPath] = useState([]);  //決策路徑
+    const [currentScenario, setCurrentScenario] = useState(null); // 追蹤當前顯示的場景
 
-    // 追蹤當前顯示的場景
-    const [currentScenario, setCurrentScenario] = useState(null);
-
-    // 當 URL 參數 id 改變時，更新當前場景
+    // 當 URL 參數 id 改變時，更新當前場景 !!重要：用於更新場景
     useEffect(() => {
-        const scenarioToDisplay = scenarios.find(s => s.id === id) || startScenarios[0];
-
+        const scenarioToDisplay = scenarios.find(s => s.id === id) || startScenarios[0];  // || 為預設值寫法
         // 當回到「起點」時，清空決策路徑
         if (startScenarios.some(s => s.id === scenarioToDisplay.id)) {
             setDecisionPath([]);
         }
-
         setCurrentScenario(scenarioToDisplay);
     }, [id]);
 
-    // 處理章節內部的分支跳轉
-    // 這裡會傳入 nextId 和選項的索引
-    const handleNextScenarioInternal = (nextId, decisionIndex) => {
-        // 獲取當前決策的完整資訊
-        const currentDecisionData = currentScenario.decisions[decisionIndex];
 
-        // 將決策資訊加入路徑
+    // 傳入 nextId 和選項的索引 !!重要：決定分支劇情
+    const handleNextScenarioInternal = (nextId, decisionIndex) => {
+        const currentDecisionData = currentScenario.decisions[decisionIndex];
         setDecisionPath([...decisionPath, {
             scenario: { id: currentScenario.id, name: currentScenario.name, intro: currentScenario.intro },
             decision: currentDecisionData
-        }]);
-
-        navigate(`/topic/${nextId}`);
+        }]); // 將決策資訊加入路徑
+        navigate(`/topic/${nextId}`); //跳到某個劇情
     };
 
-    // 處理章節之間的線性跳轉
+    // 「下一個時空」
     const handleNextChapter = () => {
         // 找出當前場景的原始章節起點ID (e.g., 從 '1929-end-A' 找出 '1929')
         const currentBaseId = currentScenario.id.split('-')[0];
-
         const currentChapterIndex = startScenarios.findIndex(s => s.id === currentBaseId);
-
         // 如果找不到起點，則預設回到第一個章節
         if (currentChapterIndex === -1) {
             navigate(`/topic/${startScenarios[0].id}`);
             return;
         }
-
         const nextChapterIndex = (currentChapterIndex + 1) % startScenarios.length;
         const nextChapterId = startScenarios[nextChapterIndex].id;
         navigate(`/topic/${nextChapterId}`);
     };
 
-    // 處理章節之間的隨機跳轉
+    // 「隨機跳轉時空」
     const handleJumpToRandomChapter = () => {
         let randomIndex;
         do {
@@ -210,7 +198,7 @@ function ScenarioManager() {
 
     // 新增：處理回到章節起點的函式
     const handleRestart = () => {
-        const currentBaseId = currentScenario.id.split('-')[0];
+        const currentBaseId = currentScenario.id.split('-')[0]; //由於我的程式id編碼統一為：年份-分支-子分支，所以才使用這個寫法，若更改id就無法這樣取用
         navigate(`/topic/${currentBaseId}`);
     };
 
