@@ -37,6 +37,7 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
             {/* 1. 場景標題與內容 - 固定顯示在最上方 */}
             <div className='test-subject'><h3>{data.name}</h3></div>
             <motion.div
+            
                 className="test-content"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -202,7 +203,7 @@ function ScenarioManager() {
         navigate(`/topic/${currentBaseId}`);
     };
 
-    if (!currentScenario) {
+    if (!currentScenario || !currentScenario.decisions) {
         return <div>載入中...</div>;
     }
 

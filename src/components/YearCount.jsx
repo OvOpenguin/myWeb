@@ -5,7 +5,6 @@ import "../sass/home.scss";
 
 
 
-// count 4 加入圖片 下方文字沒有沿用
 export default function YearCounter() {
     const [year, setYear] = useState(1636);
     const [eventText, setEventText] = useState("");
@@ -19,30 +18,22 @@ export default function YearCounter() {
         let currentYear = startYear;
         let timer;
 
+        // 重要! 主要
         function runCounter() {
             timer = setInterval(() => {
                 if (currentYear >= endYear) {
                     clearInterval(timer);
-                    return; // 結束本次函式執行
+                    return; // 2025年結束!
                 }
                 currentYear += 1;
                 setYear(currentYear);
-
-                // 如果是關鍵年份 → 暫停 & 顯示事件 + 換背景()
-                //     if (keyEvents[currentYear]) {
-                //         setEventText(keyEvents[currentYear].text);
-                //         setBgImage(keyEvents[currentYear].bg);
-                //         clearInterval(timer);
-                //         setTimeout(runCounter, 2000); // 停 2 秒後繼續
-                //     }
-                // }, 50); // 控制正數速度
 
                 const matchedEvent = EventData.find(e => e.year === currentYear); // 改用陣列查找!!
                 if (matchedEvent) {
                     setEventText(matchedEvent.name);
                     setBgImage(matchedEvent.bg);
                     clearInterval(timer);
-                    setTimeout(runCounter, 2000);
+                    setTimeout(runCounter, 2000); //setTimeout(callback, delay)  //callback：要延遲執行的函式 //delay：延遲時間（毫秒）
                 }
             }, 50);
         }
@@ -60,8 +51,10 @@ export default function YearCounter() {
                 {
                     duration: 0.2,
                     onUpdate(value) {
-                        nodeRef.current.textContent = Math.floor(value);
-                    },
+                        if (nodeRef.current) { 
+                            nodeRef.current.textContent = Math.floor(value);
+                        }
+                    }
                 }
             );
             return () => controls.stop();
@@ -76,8 +69,8 @@ export default function YearCounter() {
             }}
         >
             {/* 年份 */}
-            <div className="count" ref={nodeRef}>
-                <h1>{startYear}</h1>
+            <div className="count" >
+                <h1 ref={nodeRef}>{startYear}</h1>
             </div>
 
             {/* 事件文字 */}
@@ -97,3 +90,14 @@ export default function YearCounter() {
         </section>
     );
 }
+
+
+// 舊版
+// 如果是關鍵年份 → 暫停 & 顯示事件 + 換背景()
+//     if (keyEvents[currentYear]) {
+//         setEventText(keyEvents[currentYear].text);
+//         setBgImage(keyEvents[currentYear].bg);
+//         clearInterval(timer);
+//         setTimeout(runCounter, 2000); // 停 2 秒後繼續
+//     }
+// }, 50); // 控制正數速度

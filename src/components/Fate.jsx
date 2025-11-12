@@ -7,7 +7,7 @@ import "../sass/home.scss";
 
 const initialScenarios = scenarios.filter(scenario => !scenario.id.includes('-'));
 
-function RandomTopicSelector({ titleRef }) {
+function RandomTopicSelector() {
     // 將初始狀態設為 null
     const [currentScenario, setCurrentScenario] = useState(null);
     const [isSelecting, setIsSelecting] = useState(false);
