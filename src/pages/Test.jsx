@@ -137,7 +137,6 @@ function Scenario({ data, onNext, decisionPath, onRestart }) {
                 </div>
 
             )}
-
         </section>
     );
 }
@@ -206,11 +205,9 @@ function ScenarioManager() {
         return <div>載入中...</div>;
     }
 
-    // 判斷是否為結局
-    const isFinalOutcome = !currentScenario.decisions || currentScenario.decisions.length === 0;
-
     return (
         <main id='testwrap'>
+            {/* 子組件 */}
             <Scenario
                 key={currentScenario.id}
                 data={currentScenario}
@@ -218,6 +215,8 @@ function ScenarioManager() {
                 decisionPath={decisionPath}
                 onRestart={handleRestart}
             />
+
+            {/* 選擇題目 */}
             <section id='box'>
                 <button className='check' onClick={handleJumpToRandomChapter}>
                     🎲 隨機跳轉時空
